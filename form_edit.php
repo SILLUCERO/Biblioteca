@@ -1,7 +1,7 @@
 <?php
 
-include('./logic/connection.php');
-$con = connection();
+include('./connection.php');
+$con = conectar();
 
 
 $id = $_GET['id'];
@@ -35,7 +35,7 @@ $row = mysqli_fetch_array($query);
     </header>
     <div class="box-form">
         <h1>Editar este registro</h1>
-        <form action="./logic/edit.php" method="POST" class="form-edit">
+        <form action="./update.php" method="POST" class="form-edit">
             <input type="hidden" name="id" value="<?= $row['id'] ?>">
             <input type="text" name="isbn" placeholder="ISBN" value="<?= $row['ISBN'] ?>">
             <input type="text" name="title" placeholder="Título" value="<?= $row['titulo'] ?>">

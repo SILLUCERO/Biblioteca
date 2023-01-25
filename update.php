@@ -2,13 +2,15 @@
 
 include("connection.php");
 $con=conectar();
-$date_id=$_GET['id'];
-$isbn=$_POST['ISBN'];
-$titulo=$_POST['titulo'];
-$autor=$_POST['autor'];
-$descripción=$_POST['descripción'];
+$id=$_POST['id'];
+$isbn=$_POST['isbn'];
+$title=$_POST['title'];
+$author=$_POST['author'];
+$description=$_POST['description'];
+$cover=$_POST['cover'];
 
-$sql="UPDATE libros SET  isbn='$ISBN',titulo='$titulo',autor='$autor' WHERE id='$date_id'";
+$sql="UPDATE libros SET  isbn='$ISBN',titulo='$titulo',author='$author',description='$description', cover=$cover'
+WHERE id='$id'";
 $query=mysqli_query($con,$sql);
 
     if($query){
