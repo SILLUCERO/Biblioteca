@@ -55,11 +55,11 @@ We design and create a library web program to be displayed on the first page. Wh
 ​
 ## :raising_hand_woman:Authors
 ​
-- [@nataliavorobyeva5](https://github.com/NataliaVorobyeva)
 - [@LittleZ17](https://github.com/LittleZ17)
 - [@LuisaVAZ](https://github.com/LuisaVAZ)
 - [@Iris Leo](https://github.com/mauisiri)   
-- [@KaroVillarraga](https://github.com/KaroVillarraga)   
+- [@KaroVillarraga](https://github.com/KaroVillarraga) 
+- [@nataliavorobyeva](https://github.com/NataliaVorobyeva)  
      
      ​​
 ## Acknowledgements
