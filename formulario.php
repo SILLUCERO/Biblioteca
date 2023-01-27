@@ -17,7 +17,7 @@
         </nav>
     </header>
 
-    <form action="./logic/create.php" method="POST">
+    <form action="./logica/crear.php" method="POST">
         <input type="text" name="isbn" placeholder="ISBN">
         <input type="text" name="titulo" placeholder="Título">
         <input type="text" name="autor" placeholder="Autor">

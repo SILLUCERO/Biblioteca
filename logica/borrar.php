@@ -1,11 +1,11 @@
 <?php
 
-include("connection.php");
+include("coneccion.php");
 $con=conectar();
 
-$date_id=$_GET['id'];
+$datos_id=$_GET['id'];
 
-$sql="DELETE FROM libros  WHERE id='$date_id'";
+$sql="DELETE FROM libros  WHERE id='$datos_id'";
 $query=mysqli_query($con,$sql);
 
     if($query){

@@ -1,16 +1,16 @@
 <?php
 
-include("connection.php");
+include("coneccion.php");
 $con=conectar();
 $id=$_POST['id'];
 $isbn=$_POST['isbn'];
-$title=$_POST['title'];
-$author=$_POST['author'];
+$titulo=$_POST['titulo'];
+$autor=$_POST['autor'];
 $description=$_POST['description'];
-$cover=$_POST['cover'];
+$portada=$_POST['portada'];
 
 $sql= "UPDATE libros
-SET ISBN='$isbn', titulo='$title', autor='$author', descripcion='$description', portada='$cover'
+SET ISBN='$isbn', titulo='$titulo', autor='$autor', descripcion='$description', portada='$portada'
 WHERE id='$id'";
 
 

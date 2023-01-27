@@ -1,6 +1,6 @@
 <?php
 
-include('./logic/connection.php');
+include('./logica/coneccion.php');
 $con = conectar();
 
 
@@ -24,8 +24,8 @@ $query = mysqli_query($con, $sql);
         <nav class="nav">
             <h1>Libros</h1>
             <ul>
-                <li><a href="./index.php">Libreria</a></li>
-                <li><a href="./form.php">Crear Registro</a></li>
+                <li><a href="./indice.php">Libreria</a></li>
+                <li><a href="./formulario.php">Crear Registro</a></li>
             </ul>
         </nav>
     </header>
@@ -39,9 +39,9 @@ $query = mysqli_query($con, $sql);
         <img src=<?= $row['portada']?>>
 
          <div> 
-           <a href="form_edit.php?id=<?= $row['id'] ?>">Editar</a>
+           <a href="edicion-formulario.php?id=<?= $row['id'] ?>">Editar</a>
            <a href="">Selecionar</a>
-           <a href="delete.php?id=<?= $row['id'] ?>">Borrar</a>
+           <a href="borrar.php?id=<?= $row['id'] ?>">Borrar</a>
          </div>
          
     </div>

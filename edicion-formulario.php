@@ -1,6 +1,6 @@
 <?php
 
-include('./logic/connection.php');
+include('./logica/coneccion.php');
 $con = conectar();
 
 
@@ -35,15 +35,15 @@ $row = mysqli_fetch_array($query);
             </ul>
         </nav>
     </header>
-    <div class="box-form">
+    <div class="contenerdor-formulario">
         <h1>Editar este registro</h1>
-        <form action="./logic/update.php" method="POST" class="form-edit">
+        <form action="./logica/actualizar.php" method="POST" class="editar-formulario">
             <input type="hidden" name="id" value="<?= $row['id'] ?>">
             <input type="text" name="isbn" placeholder="ISBN" value="<?= $row['ISBN'] ?>">
-            <input type="text" name="title" placeholder="Título" value="<?= $row['titulo'] ?>">
-            <input type="text" name="author" placeholder="Autor" value="<?= $row['autor'] ?>">
+            <input type="text" name="titulo" placeholder="Título" value="<?= $row['titulo'] ?>">
+            <input type="text" name="autor" placeholder="Autor" value="<?= $row['autor'] ?>">
             <input type="text" name="description" placeholder="Descripción" value="<?= $row['descripcion'] ?>">
-            <input type="text" name="cover" placeholder="Portada" value="<?= $row['portada'] ?>">
+            <input type="text" name="portada" placeholder="Portada" value="<?= $row['portada'] ?>">
 
             <input type="submit" value="Actualizar">
         </form>
