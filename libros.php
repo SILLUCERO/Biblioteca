@@ -30,7 +30,7 @@ $query = mysqli_query($con, $sql);
         <img src=<?= $row['portada']?>>
 
          <div> 
-           <a href="update.php?id=<?= $row['id'] ?>">Editar</a>
+           <a href="form_edit.php?id=<?= $row['id'] ?>">Editar</a>
            <a href="">Selecionar</a>
            <a href="delete.php?id=<?= $row['id'] ?>">Borrar</a>
          </div>
