@@ -30,8 +30,8 @@ $row = mysqli_fetch_array($query);
         <nav class="nav">
             <h1>Editar</h1>
             <ul>
-                <li><a href="./index.php">Libreria</a></li>
-                <li><a href="./form.php">Crear Registro</a></li>
+                <li><a href="./indice.php">Libreria</a></li>
+                <li><a href="./formulario.php">Crear Registro</a></li>
             </ul>
         </nav>
     </header>
@@ -42,7 +42,7 @@ $row = mysqli_fetch_array($query);
             <input type="text" name="isbn" placeholder="ISBN" value="<?= $row['ISBN'] ?>">
             <input type="text" name="titulo" placeholder="Título" value="<?= $row['titulo'] ?>">
             <input type="text" name="autor" placeholder="Autor" value="<?= $row['autor'] ?>">
-            <input type="text" name="description" placeholder="Descripción" value="<?= $row['descripcion'] ?>">
+            <input type="text" name="descripcion" placeholder="Descripción" value="<?= $row['descripcion'] ?>">
             <input type="text" name="portada" placeholder="Portada" value="<?= $row['portada'] ?>">
 
             <input type="submit" value="Actualizar">

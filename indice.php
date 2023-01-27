@@ -41,7 +41,7 @@ $query = mysqli_query($con, $sql);
          <div> 
            <a href="edicion-formulario.php?id=<?= $row['id'] ?>">Editar</a>
            <a href="">Selecionar</a>
-           <a href="borrar.php?id=<?= $row['id'] ?>">Borrar</a>
+           <a href="./logica/borrar.php?id=<?= $row['id'] ?>">Borrar</a>
          </div>
          
     </div>

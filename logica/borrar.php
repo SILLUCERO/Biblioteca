@@ -9,6 +9,6 @@ $sql="DELETE FROM libros  WHERE id='$datos_id'";
 $query=mysqli_query($con,$sql);
 
     if($query){
-       // Header("Location: form.php");
+       Header("Location: ../indice.php");
     }
 ?>
