@@ -22,7 +22,7 @@
         <input type="text" name="titulo" placeholder="Título">
         <input type="text" name="autor" placeholder="Autor">
         <input type="text" name="descripcion" placeholder="Descripción">
-        <input type="file" name="portada" placeholder="Portada">
+        <input type="text" name="portada" placeholder="Portada">
 
         <input type="submit" value="Añadir">
     </form>
