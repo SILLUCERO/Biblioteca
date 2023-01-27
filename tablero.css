@@ -1,81 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,400&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+
 :root {
-    --c-background:#FFFFFF;
-    --c-window: #B6BBD6;
-    --c-gap: #ECECEC;
-    --c-card: #D9D9D9;
-   
-    --c-btn-delete-border: #83D77B;
-    --c-btn-delete: rgb(131, 215, 123, 0.9);
-    --c-btn-delete-border: #6895BE;
-    --c-btn-delete: rgb(104, 149, 190, 0.9);
-    --c-btn-delete-border: #CC8282;
-    --c-btn-delete: rgb(204, 130, 130, 0.9);
+  --c-background: #FFFFFF;
+  --c-window: #B6BBD6;
+  --c-gap: #ECECEC;
+  --c-card: #D9D9D9;
 
-    --c-text:#393535;
-    --c-text-fill: #BBB4B4;
-    --font: 'Lato', sans-serif;
-  }
+  --c-btn-view-border: #83D77B;
+  --c-btn-view: rgb(131, 215, 123, 0.9);
+  --c-btn-edit-border: #6895BE;
+  --c-btn-edit: rgb(104, 149, 190, 0.9);
+  --c-btn-delete-border: #CC8282;
+  --c-btn-delete: rgb(204, 130, 130, 0.9);
 
-  *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-
-  img{
-    width: 5rem;
-  }
-
-  .box{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-
-  .tablero{
-    width: 80vw;
-
-
-    display: grid;
-    justify-items: center;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 2rem 0;
-  }
-
-  .libro{
-    background-color: var(--c-card);
-    width: 100%;
-    height: 20rem;
-    display: grid;
-    grid-template-areas:
-    "titulo titulo"
-    "portada btns"
-    "portada btns"
-    "portada btns";
-    justify-content: center;
-    /* align-items: center; */
-
-    border-radius: 10px;
-  }
-  .titulo {
-    background-color: var(--c-gap);
-    grid-area: titulo;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 5% 2%;
-
-    /*  */
-  }
+  --c-text: #393535;
+  --c-text-fill: #BBB4B4;
+  --font: 'Lato', sans-serif;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  text-decoration: none;
+  list-style-type: none;
+}
+a{
+  color: inherit;
+}
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.tablero {
+  width: 80vw;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem 0;
+}
+.libro {
+  background-color: var(--c-card);
+  display: flex;
+  flex-direction: column;
+  padding: 4%;
+  border-radius: 10px;
+}
+.titulo {
+  background-color: var(--c-gap);
+  display: flex;
+  align-items: center;
+  padding: 2% 5%;
+}
+.box1 {
+  display: flex;
+  /* justify-content: space-between; */
+  margin-top: 4%;
+}
+.caja{
+  display: flex;
+  /* flex-flow: column wrap; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  width: 70%;
+}
+.boxI{
+  overflow: hidden;
+  border-radius: 10px;
+}
+.boxI img{
+  width: 100%;
+  height: auto;
+}
+@supports(object-fit: cover){
+    .boxI img{
+      height: 100%;
+      object-fit: cover;
+      object-position: center center;
+    }
+}
+.btns {
+  display: none;
+}
+.btnsI{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.btnsI a{
+  color: var(--c-text);
+  margin-bottom: 10%;
+  margin-left: 10%;
+  padding: 10%;
   
- .portada {
-    grid-area: portada;
-  }
-  
-  .btns {
-    grid-area: btns;
-    display: flex;
-    flex-direction: column;
-  }
- 
+  border-radius: 10px;
+}
+.btnsI .eye{
+  background-color: var(--c-btn-view);
+}
+.btnsI .pencil{
+  background-color: var(--c-btn-edit);
+  border-color: var(--c-btn-edit-border);
+}
+.btnsI .trash{
+  background-color: var(--c-btn-delete);
+}
+.btnsI i{
+  display:flex;
+  justify-content: center;
+}
+
+
+
