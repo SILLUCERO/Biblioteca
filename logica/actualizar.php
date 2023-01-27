@@ -1,16 +1,16 @@
 <?php
 
-include("connection.php");
+include("coneccion.php");
 $con=conectar();
 $id=$_POST['id'];
 $isbn=$_POST['isbn'];
-$title=$_POST['title'];
-$author=$_POST['author'];
-$description=$_POST['description'];
-$cover=$_POST['cover'];
+$titulo=$_POST['titulo'];
+$autor=$_POST['autor'];
+$descripcion=$_POST['descripcion'];
+$portada=$_POST['portada'];
 
 $sql= "UPDATE libros
-SET ISBN='$isbn', titulo='$title', autor='$author', descripcion='$description', portada='$cover'
+SET ISBN='$isbn', titulo='$titulo', autor='$autor', descripcion='$descripcion', portada='$portada'
 WHERE id='$id'";
 
 
@@ -20,6 +20,6 @@ WHERE id='$id'";
 $query=mysqli_query($con,$sql);
 
     if($query){
-       // Header("Location: form.php");
+       Header("Location: ../indice.php");
     }
 ?>
