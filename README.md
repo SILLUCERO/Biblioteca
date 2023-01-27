@@ -11,17 +11,12 @@ We design and create a library web program to be displayed on the first page. Wh
    ​
 ## :iphone:Mobile Graphic reference
 ​
-![Mobile](https://github.com/LittleZ17/Biblioteca/blob/dev/assets/demo/Desktop/home.png)
-![](https://github.com/LittleZ17/Biblioteca/blob/dev/assets/demo/Desktop/create.png)​
-![](https://github.com/LittleZ17/Biblioteca/blob/dev/assets/demo/Desktop/detail.png)​
-![](https://github.com/LittleZ17/Biblioteca/blob/dev/assets/demo/Desktop/update.png)​
+![Mobile](https://github.com/LittleZ17/Biblioteca/blob/dev/assets/demo/Mobile.png)
 ​
 ## :desktop_computer:Desktop Graphic reference
 ​
-![Desktop](https://github.com/LittleZ17/Biblioteca/blob/dev/assets/demo/Mobile/home.png)
-![](https://github.com/LittleZ17/Biblioteca/blob/dev/assets/demo/Mobile/create.png)​
-![](https://github.com/LittleZ17/Biblioteca/blob/dev/assets/demo/Mobile/detail.png)​
-![](https://github.com/LittleZ17/Biblioteca/blob/dev/assets/demo/Mobile/update.png)​
+![Desktop](https://github.com/LittleZ17/Biblioteca/blob/dev/assets/demo/Desktop.png)
+
 ## :hammer_and_wrench:Tools 
 - Figma
 - Visual Studio Code
