@@ -16,7 +16,6 @@
             </ul>
         </nav>
     </header>
-
     <form action="./logic/create.php" method="POST">
         <input type="text" name="isbn" placeholder="ISBN">
         <input type="text" name="titulo" placeholder="Título">
@@ -24,7 +23,7 @@
         <input type="text" name="descripcion" placeholder="Descripción">
         <input type="text" name="portada" placeholder="Portada">
 
-        <input type="submit" value="Añadir">
-    </form>
+                <input type="submit" value="Añadir">
+            </form>
 </body>
 </html>
