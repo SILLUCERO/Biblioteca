@@ -11,11 +11,13 @@ We design and create a library web program to be displayed on the first page. Wh
    ​
 ## :iphone:Mobile Graphic reference
 ​
-![Mobile](https://github.com/LittleZ17/Biblioteca/blob/dev/assets/demo/Mobile.png)
+<img width="959" alt="Mobile" src="https://user-images.githubusercontent.com/113552534/215080259-93224ac6-e0de-424a-975c-3436359ddbb5.png">
 ​
+
 ## :desktop_computer:Desktop Graphic reference
 ​
-![Desktop](https://github.com/LittleZ17/Biblioteca/blob/dev/assets/demo/Desktop.png)
+<img width="959" alt="Desktop" src="https://user-images.githubusercontent.com/113552534/215080324-5860fadb-deeb-45cb-b7d3-45f5e05c2b82.png">
+
 
 ## :hammer_and_wrench:Tools 
 - Figma
