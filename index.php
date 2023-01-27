@@ -1,6 +1,6 @@
 <?php
 
-include('./connection.php');
+include('./logic/connection.php');
 $con = conectar();
 
 
@@ -20,6 +20,15 @@ $query = mysqli_query($con, $sql);
     <title>Document</title>
 </head>
 <body>
+    <header>
+        <nav class="nav">
+            <h1>Editar</h1>
+            <ul>
+                <li><a href="./index.php">Libreria</a></li>
+                <li><a href="./form.php">Crear Registro</a></li>
+            </ul>
+        </nav>
+    </header>
     <?php
     while($row = mysqli_fetch_array($query)):?>
 

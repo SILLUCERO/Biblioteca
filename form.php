@@ -7,7 +7,17 @@
     <title>Biblioteca</title>
 </head>
 <body>
-    <form action="insertar.php" method="POST">
+    <header>
+        <nav class="nav">
+            <h1>Editar</h1>
+            <ul>
+                <li><a href="./index.php">Libreria</a></li>
+                <li><a href="./form.php">Crear Registro</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <form action="./logic/create.php" method="POST">
         <input type="text" name="isbn" placeholder="ISBN">
         <input type="text" name="titulo" placeholder="Título">
         <input type="text" name="autor" placeholder="Autor">

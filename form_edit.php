@@ -1,6 +1,6 @@
 <?php
 
-include('./connection.php');
+include('./logic/connection.php');
 $con = conectar();
 
 
@@ -30,14 +30,14 @@ $row = mysqli_fetch_array($query);
         <nav class="nav">
             <h1>Editar</h1>
             <ul>
-                <li><a href="./board.php">Libreria</a></li>
+                <li><a href="./index.php">Libreria</a></li>
                 <li><a href="./form.php">Crear Registro</a></li>
             </ul>
         </nav>
     </header>
     <div class="box-form">
         <h1>Editar este registro</h1>
-        <form action="./update.php" method="POST" class="form-edit">
+        <form action="./logic/update.php" method="POST" class="form-edit">
             <input type="hidden" name="id" value="<?= $row['id'] ?>">
             <input type="text" name="isbn" placeholder="ISBN" value="<?= $row['ISBN'] ?>">
             <input type="text" name="title" placeholder="Título" value="<?= $row['titulo'] ?>">
