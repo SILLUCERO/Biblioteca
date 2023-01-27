@@ -9,7 +9,7 @@
 <body>
     <header>
         <nav class="nav">
-            <h1>Editar</h1>
+            <h1>Añadir</h1>
             <ul>
                 <li><a href="./index.php">Libreria</a></li>
                 <li><a href="./form.php">Crear Registro</a></li>
