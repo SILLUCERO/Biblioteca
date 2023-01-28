@@ -17,16 +17,29 @@ $query = mysqli_query($con, $sql);
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" src="./estilo.css">
     <title>Biblioteca</title>
 </head>
 <body>
     <header>
         <nav class="nav">
-            <h1>Biblioteca</h1>
-            <ul>
-                <li><a href="./indice.php">Libreria</a></li>
-                <li><a href="./formulario.php">Crear Registro</a></li>
-            </ul>
+            <div class="imagotipo">
+                <div class="img_isologo">
+                    <img src="./assets/img_logo.png">            
+                </div>
+                <div class="logotipo">
+                    <h2>Smart Books</h2>
+                </div>
+            </div>
+            <div class=acciones_barra>
+                <ul>
+                    <li><a href="./indice.php">Libreria</a></li>
+                    <li><a href="./formulario.php">Crear Registro</a></li>
+                </ul>
+                <div class="Buscar">
+                    <h2>Buscar</h2>
+                </div>
+            </div>
         </nav>
     </header>
     <?php

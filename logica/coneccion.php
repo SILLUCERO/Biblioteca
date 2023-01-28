@@ -2,7 +2,7 @@
 function conectar(){
     $host="localhost";
     $user="root";
-    $pass="";
+    $pass="root";
 //$pass="root";
     $bd="biblioteca";
 

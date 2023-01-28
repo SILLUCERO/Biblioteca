@@ -1,4 +1,4 @@
-
+@import url("./estilos/encabezado.css");
 
 :root {
     --c-background:#FFFFFF;
@@ -16,3 +16,16 @@
     --c-text-fill: #BBB4B4;
     --font: 'Lato', sans-serif;
   }
+
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: var(--c-background);
+    list-style:none;
+  }
+
+  
