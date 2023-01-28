@@ -11,12 +11,14 @@ We design and create a library web program to be displayed on the first page. Wh
    ​
 ## :iphone:Mobile Graphic reference
 ​
-![Mobile](https://femcoders.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fb40a38f6-5832-4bdf-8303-2f084c34a20d%2FWhatsApp_Image_2021-10-29_at_08.46.11.jpeg?table=block&id=c1a0021e-dc27-4e55-9445-b2c96f2e97bb&spaceId=b1698d55-b015-4275-96b0-7b32bc5e291c&width=2000&userId=&cache=v2)
+<img width="959" alt="Mobile" src="https://user-images.githubusercontent.com/113552534/215080259-93224ac6-e0de-424a-975c-3436359ddbb5.png">
 ​
+
 ## :desktop_computer:Desktop Graphic reference
 ​
-![Desktop](https://femcoders.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fcb72f498-a8d2-4955-8b1b-0fc1fc3e8196%2FWhatsApp_Image_2021-10-29_at_08.46.11_(1).jpeg?table=block&id=09b0ce40-d3df-4022-aae2-9b423005663d&spaceId=b1698d55-b015-4275-96b0-7b32bc5e291c&width=2000&userId=&cache=v2)
-​
+<img width="959" alt="Desktop" src="https://user-images.githubusercontent.com/113552534/215080324-5860fadb-deeb-45cb-b7d3-45f5e05c2b82.png">
+
+
 ## :hammer_and_wrench:Tools 
 - Figma
 - Visual Studio Code
