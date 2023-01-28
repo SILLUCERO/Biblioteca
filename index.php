@@ -22,7 +22,7 @@ $query = mysqli_query($con, $sql);
 <body>
     <header>
         <nav class="nav">
-            <h1>Libros</h1>
+            <h1>Biblioteca</h1>
             <ul>
                 <li><a href="./index.php">Libreria</a></li>
                 <li><a href="./form.php">Crear Registro</a></li>
