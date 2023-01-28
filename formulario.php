@@ -11,13 +11,13 @@
         <nav class="nav">
             <h1>Añadir</h1>
             <ul>
-                <li><a href="./index.php">Libreria</a></li>
-                <li><a href="./form.php">Crear Registro</a></li>
+                <li><a href="./indice.php">Libreria</a></li>
+                <li><a href="./formulario.php">Crear Registro</a></li>
             </ul>
         </nav>
     </header>
 
-    <form action="./logic/create.php" method="POST">
+    <form action="./logica/crear.php" method="POST">
         <input type="text" name="isbn" placeholder="ISBN">
         <input type="text" name="titulo" placeholder="Título">
         <input type="text" name="autor" placeholder="Autor">
