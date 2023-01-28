@@ -8,16 +8,17 @@
   --c-card: #D9D9D9;
 
   --c-btn-view-border: #83D77B;
-  --c-btn-view: rgb(131, 215, 123, 0.9);
+  --c-btn-view: rgb(131, 215, 123, 0.6);
   --c-btn-edit-border: #6895BE;
-  --c-btn-edit: rgb(104, 149, 190, 0.9);
+  --c-btn-edit: rgb(104, 149, 190, 0.6);
   --c-btn-delete-border: #CC8282;
-  --c-btn-delete: rgb(204, 130, 130, 0.9);
+  --c-btn-delete: rgb(204, 130, 130, 0.6);
 
   --c-text: #393535;
   --c-text-fill: #BBB4B4;
   --font: 'Lato', sans-serif;
 }
+
 * {
   padding: 0;
   margin: 0;
@@ -48,49 +49,44 @@ a{
   flex-direction: column;
   padding: 4%;
   border-radius: 10px;
+  width: 100%;
 }
 .titulo {
   background-color: var(--c-gap);
   display: flex;
   align-items: center;
   padding: 2% 5%;
+  width: 100%;
+  height: 45px;
 }
 .box1 {
   display: flex;
-  /* justify-content: space-between; */
   margin-top: 4%;
 }
 .caja{
   display: flex;
-  /* flex-flow: column wrap; */
-  /* justify-content: center; */
-  /* align-items: center; */
   width: 70%;
 }
 .boxI{
   overflow: hidden;
   border-radius: 10px;
+  width: 200px;
+  height: 300px;
 }
 .boxI img{
   width: 100%;
-  height: auto;
+  height: fit-content;
 }
-@supports(object-fit: cover){
-    .boxI img{
-      height: 100%;
-      object-fit: cover;
-      object-position: center center;
-    }
-}
+
 .btns {
   display: none;
 }
-.btnsI{
+.btnsIcons{
   display: flex;
   flex-direction: column;
   width: 100%;
 }
-.btnsI a{
+.btnsIcons a{
   color: var(--c-text);
   margin-bottom: 10%;
   margin-left: 10%;
@@ -98,20 +94,69 @@ a{
   
   border-radius: 10px;
 }
-.btnsI .eye{
+.bi{
+  font-size: 1.2rem;
+}
+.btnsIcons .eye, .btns .eye{
   background-color: var(--c-btn-view);
+  border: 1.5px solid var(--c-btn-view-border);
+
 }
-.btnsI .pencil{
+.btnsIcons .pencil, .btns .pencil{
   background-color: var(--c-btn-edit);
-  border-color: var(--c-btn-edit-border);
+  border: 1.5px solid var(--c-btn-edit-border);
 }
-.btnsI .trash{
+.btnsIcons .trash, .btns .trash{
   background-color: var(--c-btn-delete);
+  border: 1.5px solid var(--c-btn-delete-border);
 }
-.btnsI i{
+.btnsIcons i{
   display:flex;
   justify-content: center;
 }
 
+@media (min-width: 768px) {
+.tablero{
+     grid-template-columns: repeat(2, 1fr);
+      gap: 2rem ;
+}
+.caja{
+  width: 70%;
+}
+.btnsIcons{
+  width: 30%;
+}
+.btnsIcons a{
+  margin-bottom: 10%;
+}
+}
 
+@media (min-width: 992px) { 
+  .tablero{
+    grid-template-columns: repeat(4, 1fr);
+    width: 90vw;
+ }
+ .caja{
+  width: 100%;
+}
+.boxI{
+  overflow: hidden;
+  border-radius: 10px;
+  width: 100px;
+  height: 200px;
+}
+.btns {
+  display: flex;
+  flex-direction: column;
+}
+.btnsIcons{
+  display: none;
+  flex-direction: column;
+  width: 100%;
+}
+
+}
+
+@media (min-width: 1200px) { ... }
+@media (min-width: 1400px) { ... }
 

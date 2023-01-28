@@ -35,23 +35,29 @@ $query = mysqli_query($con, $sql);
         </header>
         <main class="tablero">
             <?php
-        while ($row = mysqli_fetch_array($query)) : ?>
-            <div class="libro">
-                <div class="titulo">
-                    <h2><?= $row['titulo'] ?></h2>
-                    <!-- <p><?= $row['autor'] ?></p> -->
+            while ($row = mysqli_fetch_array($query)) : ?>
+                <div class="libro">
+                    <div class="titulo">
+                        <h4><?= $row['titulo'] ?></h4>
+                        <!-- <p><?= $row['autor'] ?></p> -->
+                    </div>
+                    <div class="box1">
+                        <div class="caja">
+                            <img class="boxI" src=<?= $row['portada'] ?>>
+                        </div>
+
+                        <div class="btns">
+                            <a class="eye" href="edicion-formulario.php?id=<?= $row['id'] ?>">Editar</a>
+                            <a class="pencil"href="">Selecionar</a>
+                            <a class="trash" href="./logica/borrar.php?id=<?= $row['id'] ?>">Borrar</a>
+                        </div>
+                        <div class="btnsIcons">
+                            <a class="eye" href="edicion-formulario.php?id=<?= $row['id'] ?>"><i class="bi bi-eye-fill"></i></a>
+                            <a class="pencil" href=""><i class="bi bi-pencil-fill"></i></a>
+                            <a class="trash" href="./logica/borrar.php?id=<?= $row['id'] ?>" class="trash"><i class="bi bi-trash3-fill"></i></a>
+                        </div>
+                    </div>
                 </div>
-                <div class="portada">
-                    <img src=<?= $row['portada'] ?>>
-                </div>
-                
-                <div class="btns">
-                    <a href="edicion-formulario.php?id=<?= $row['id'] ?>">Editar</a>
-                    <a href="">Selecionar</a>
-                    <a href="./logica/borrar.php?id=<?= $row['id'] ?>">Borrar</a>
-                </div>
-                
-            </div>
             <?php endwhile; ?>
         </main>
     </div>
