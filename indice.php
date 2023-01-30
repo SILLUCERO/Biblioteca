@@ -21,11 +21,10 @@ $query = mysqli_query($con, $sql);
     <title>Biblioteca</title>
 </head>
 <body>
-    <header>
-        <nav class="nav">
+    <header class="nav">
             <div class="imagotipo">
                 <div class="img_isologo">
-                    <img src="./assets/img_logo.png">            
+                    <img src="./assets/img_logo.png" alt="isologo de Smart Books">            
                 </div>
                 <div class="sb_logotipo">
                     <h2>Smart Books</h2>
@@ -39,13 +38,12 @@ $query = mysqli_query($con, $sql);
                     <a href="./formulario.php">Crear Registro</a>
                 </div>
                 <div class="buscar">
-                <form action="indice.php" method="POST">
+                <form class=buscar_ok action="indice.php" method="POST">
                     <input type="text" id="palabras_clave" name="keywords" size="30" maxlength="30" value="Buscar...">
                     <input type="submit" name="buscar" id="search" value="OK">
                 </form>
                 </div>
             </div>
-        </nav>
     </header>
     <?php
     while($row = mysqli_fetch_array($query)):?>

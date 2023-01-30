@@ -1,4 +1,5 @@
 
+
 .nav {
     display:flex;
     flex-direction: row;
@@ -17,9 +18,9 @@
     display:flex;
     flex-direction: row;
     justify-content: center;
-    width: 50px;
-    height: 50px;
-    margin-left:25px;
+    width: 4rem;
+    height: 4rem;
+    margin: 0.5% 2% 0.5% 11%
 }
 
 .sb_logotipo {
@@ -35,26 +36,48 @@
 .biblioteca {
     display:flex;
     align-items: center;
-    margin-right:25px;
+    margin-right:5%;
     text-decoration:none;
     padding:1%;
+    height:1.5rem;
     border-radius: 10px;
     background-color: var(--c-gap);
     
 }
 
+.biblioteca a {
+    display:flex;
+    justify-content: center;
+    padding: 10%;
+    width: 9rem;
+}
+
 .formulario {
     display:flex;
     align-items: center;
-    margin-right:25px;
+    margin-right:5%;
     text-decoration:none;
     padding:1%;
+    height:1.5rem;
     border-radius: 10px;
     background-color: var(--c-gap);
 
 }
 
+.formulario a {
+    display:flex;
+    justify-content: center;
+    padding: 10%;
+    width: 9rem;
+}
+
+.buscar_ok {
+    display:flex;
+    width: 10%;
+}
+
 #palabras_clave {
     color: var(--c-text-fill);
     background-color: var(--c-gap);
+    padding: 1%;
 }
