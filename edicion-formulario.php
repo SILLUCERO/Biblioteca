@@ -22,7 +22,10 @@ $row = mysqli_fetch_array($query);
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./edicion-formulario.css" />
+    <link rel="stylesheet" href="./estilos/encabezado.css" />
+    <link rel="stylesheet" href="./estilos/style.css" />
+    <link rel="stylesheet" href="./estilos/formulario.css" />
+
 </head>
 
 <body>
@@ -38,7 +41,7 @@ $row = mysqli_fetch_array($query);
         </header>
         <div>
             <h1>Editar este registro</h1>
-            <form class="formulario" action="./logica/actualizar.php" method="POST">
+            <form class="formLibros" action="./logica/actualizar.php" method="POST">
                 <input class="caja" type="hidden" name="id" value="<?= $row['id'] ?>">
                 <input class="caja" type="text" name="isbn" placeholder="ISBN" value="<?= $row['ISBN'] ?>">
                 <input class="caja" type="text" name="titulo" placeholder="Título" value="<?= $row['titulo'] ?>">
@@ -46,7 +49,7 @@ $row = mysqli_fetch_array($query);
                 <input class="caja" type="text" name="descripcion" placeholder="Descripción" value="<?= $row['descripcion'] ?>">
                 <input class="caja" type="text" name="portada" placeholder="Portada" value="<?= $row['portada'] ?>">
                 
-                <input class="btnCrear" type="submit" value="Confirmar">
+                <input class="btnConfirmar" type="submit" value="Confirmar">
             </form>
         </div>
     </div>

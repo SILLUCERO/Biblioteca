@@ -21,7 +21,7 @@
             </nav>
         </header>
         <div>
-            <form class='formulario' action="./logica/crear.php" method="POST">
+            <form class='formLibros' action="./logica/crear.php" method="POST">
                 <input class='caja' type="text" name="isbn" placeholder="ISBN">
                 <input class='caja' type="text" name="titulo" placeholder="Título">
                 <input class='caja' type="text" name="autor" placeholder="Autor">
