@@ -26,7 +26,6 @@
 
         .sb_logotipo {
             display:flex;
-            padding: 5rem;
             width: 8rem;
             color: var(--c-text);
         }
