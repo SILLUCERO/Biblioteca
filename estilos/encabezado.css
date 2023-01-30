@@ -33,18 +33,28 @@
 }
 
 .biblioteca {
+    display:flex;
+    align-items: center;
     margin-right:25px;
     text-decoration:none;
+    padding:1%;
+    border-radius: 10px;
+    background-color: var(--c-gap);
+    
 }
-
 
 .formulario {
+    display:flex;
+    align-items: center;
     margin-right:25px;
+    text-decoration:none;
+    padding:1%;
+    border-radius: 10px;
+    background-color: var(--c-gap);
 
 }
 
-.buscar {
-    margin-right:200px;
+#palabras_clave {
     color: var(--c-text-fill);
-    
+    background-color: var(--c-gap);
 }

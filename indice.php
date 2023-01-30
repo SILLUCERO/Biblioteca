@@ -39,7 +39,10 @@ $query = mysqli_query($con, $sql);
                     <a href="./formulario.php">Crear Registro</a>
                 </div>
                 <div class="buscar">
-                    <p>Buscar...</p>
+                <form action="indice.php" method="POST">
+                    <input type="text" id="palabras_clave" name="keywords" size="30" maxlength="30" value="Buscar...">
+                    <input type="submit" name="buscar" id="search" value="OK">
+                </form>
                 </div>
             </div>
         </nav>
