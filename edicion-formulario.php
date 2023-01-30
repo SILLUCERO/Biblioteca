@@ -1,6 +1,6 @@
 <?php
 
-include('./logica/coneccion.php');
+include('./logica/conexion.php');
 $con = conectar();
 
 

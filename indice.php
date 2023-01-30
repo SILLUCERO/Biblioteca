@@ -1,6 +1,6 @@
 <?php
 
-include('./logica/coneccion.php');
+include('./logica/conexion.php');
 $con = conectar();
 
 
@@ -62,13 +62,14 @@ $query = mysqli_query($con, $sql);
                         </div>
 
                         <div class="btns">
-                            <a class="eye" href="edicion-formulario.php?id=<?= $row['id'] ?>">Editar</a>
-                            <a class="pencil"href="">Selecionar</a>
+                            <a class="eye" href="detalle.php?id=<?= $row['id'] ?>">Ver info.</a>
+                            <a class="pencil" href="edicion-formulario.php?id=<?= $row['id'] ?>">Editar</a>
                             <a class="trash" href="./logica/borrar.php?id=<?= $row['id'] ?>">Borrar</a>
                         </div>
+
                         <div class="btnsIcons">
-                            <a class="eye" href="edicion-formulario.php?id=<?= $row['id'] ?>"><i class="bi bi-eye-fill"></i></a>
-                            <a class="pencil" href=""><i class="bi bi-pencil-fill"></i></a>
+                            <a class="eye" href="detalle.php?id=<?= $row['id'] ?>"><i class="bi bi-eye-fill"></i></a>
+                            <a class="pencil" href="edicion-formulario.php?id=<?= $row['id'] ?>"><i class="bi bi-pencil-fill"></i></a>
                             <a class="trash" href="./logica/borrar.php?id=<?= $row['id'] ?>" class="trash"><i class="bi bi-trash3-fill"></i></a>
                         </div>
                     </div>
