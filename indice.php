@@ -27,7 +27,7 @@ $query = mysqli_query($con, $sql);
     <header class="nav">
             <div class="imagotipo">
                 <div class="img_isologo">
-                    <img src="./assets/img_logo.png" alt="isologo de Smart Books">            
+                    <img src="./assets/img_logo.png" alt="Isologo de Smart Books">            
                 </div>
                 <div class="sb_logotipo">
                     <h2>Smart Books</h2>

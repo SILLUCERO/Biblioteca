@@ -1,83 +1,85 @@
-
-
 .nav {
     display:flex;
     flex-direction: row;
     align-items: center;
-    padding: 0.5%;
+    padding: 2.5rem;
+    height: 2rem;
+    width:100%;
     justify-content: space-between;
     background-color: var(--c-window);
 }
 
-.imagotipo {
-    display:flex;
-    align-items: center;
-}
 
-.img_isologo {
-    display:flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 4rem;
-    height: 4rem;
-    margin: 0.5% 2% 0.5% 11%
-}
+    .imagotipo {
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+    }
 
-.sb_logotipo {
-    display:flex;
-    color: var(--c-text);
-}
+        .img_isologo {
+            display:flex;
+            justify-content: center;
+            width: 4rem;
+            height: 4rem;
+            margin: 0.5% 2% 0.5% 11%
+        }
 
-.acciones_barra {
-    display:flex;
-    flex-direction:row;
-}
+        .sb_logotipo {
+            display:flex;
+            color: var(--c-text);
+        }
 
-.biblioteca {
-    display:flex;
-    align-items: center;
-    margin-right:5%;
-    text-decoration:none;
-    padding:1%;
-    height:1.5rem;
-    border-radius: 10px;
-    background-color: var(--c-gap);
-    
-}
+    .acciones_barra {
+        display:flex;
+        flex-direction:row;
+        align-items: center;
+    }
 
-.biblioteca a {
-    display:flex;
-    justify-content: center;
-    padding: 10%;
-    width: 9rem;
-}
+        .biblioteca {
+            display:flex;
+            align-items: center;
+            margin-right:5%;
+            text-decoration:none;
+            padding:1%;
+            height:1.5rem;
+            border-radius: 10px;
+            background-color: var(--c-gap);
+            
+        }
 
-.formulario {
-    display:flex;
-    align-items: center;
-    margin-right:5%;
-    text-decoration:none;
-    padding:1%;
-    height:1.5rem;
-    border-radius: 10px;
-    background-color: var(--c-gap);
+            .biblioteca a {
+                display:flex;
+                justify-content: center;
+                padding: 10%;
+                width: 9rem;
+            }
 
-}
+        .formulario {
+            display:flex;
+            align-items: center;
+            margin-right:5%;
+            text-decoration:none;
+            padding:1%;
+            height:1.5rem;
+            border-radius: 10px;
+            background-color: var(--c-gap);
 
-.formulario a {
-    display:flex;
-    justify-content: center;
-    padding: 10%;
-    width: 9rem;
-}
+        }
 
-.buscar_ok {
-    display:flex;
-    width: 10%;
-}
+            .formulario a {
+                display:flex;
+                justify-content: center;
+                padding: 10%;
+                width: 9rem;
+            }
 
-#palabras_clave {
-    color: var(--c-text-fill);
-    background-color: var(--c-gap);
-    padding: 1%;
-}
+        .buscar_ok {
+            display:flex;
+            width: 10%;
+        }
+
+        #palabras_clave {
+            color: var(--c-text-fill);
+            background-color: var(--c-gap);
+            padding: 1%;
+        }
