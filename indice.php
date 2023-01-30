@@ -59,6 +59,29 @@ $query = mysqli_query($con, $sql);
                 
             </div>
         </header>
+
+
+<?php
+   
+   include 'helpers/read.php';
+
+
+
+
+?>
+
+
+
+
+
+
+
+
+
+
+
+
+
         <main class="tablero">
             <?php
             while ($row = mysqli_fetch_array($query)) : ?>
