@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biblioteca</title>
-    <link rel="stylesheet" href="./estilos/formulario.css" />
+    <link rel="stylesheet" href="./formulario.css" />
 </head>
 <body>
     <header>
@@ -19,13 +19,13 @@
     </header>
     <div class='contenedorFormulario'>
         <form class='formulario' action="./logica/crear.php" method="POST">
-            <input type="text" name="isbn" placeholder="ISBN">
-            <input type="text" name="titulo" placeholder="Título">
-            <input type="text" name="autor" placeholder="Autor">
-            <input type="text" name="descripcion" placeholder="Descripción">
-            <input type="text" name="portada" placeholder="Portada">
+            <input class='caja' type="text" name="isbn" placeholder="ISBN">
+            <input class='caja' type="text" name="titulo" placeholder="Título">
+            <input class='caja' type="text" name="autor" placeholder="Autor">
+            <input class='caja' type="text" name="descripcion" placeholder="Descripción">
+            <input class='caja' type="text" name="portada" placeholder="Portada">
 
-                    <input type="submit" value="Añadir">
+                    <input class='btnCrear' type="submit" value="Crear">
                 </form>
     </div>
 </body>
