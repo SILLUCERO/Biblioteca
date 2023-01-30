@@ -9,26 +9,37 @@
     --c-background-box: #D9D9D9;
 }
 
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
 
-.contenedorFormulario {
-    width: 60%;
-    background-color: var(--c-background-box);
-    border-radius: 10px;
+.box0 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .formulario {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 50vw;
+    background-color: var(--c-background-box);
+    border-radius: 10px;
+    padding: 10%;
   }
 
 .caja {
+    width: 100%;
     border: none;
     background-color: var(--c-gap);
     color: var(--c-text-fill);
     border-radius: 10px;
-    padding: 10px;
-    margin: 10px 0;
+    padding: 5% 2%;
+    margin: 4% 0;
   }
 
   .btnCrear {
@@ -36,6 +47,8 @@
     background-color: var(--c-btn-delete);
     color: var(--c-text);
     border-radius: 10px;
-    padding: 10px;
-    margin: 10px 0;
+    width: 30%;
+    padding: 5% 2%;
+    margin: 10% 0;
+    align-self:flex-end;
   }

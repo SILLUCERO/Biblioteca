@@ -8,25 +8,27 @@
     <link rel="stylesheet" href="./formulario.css" />
 </head>
 <body>
-    <header>
-        <nav class="nav">
-            <h1>Añadir</h1>
-            <ul>
-                <li><a href="./indice.php">Libreria</a></li>
-                <li><a href="./formulario.php">Crear Registro</a></li>
-            </ul>
-        </nav>
-    </header>
-    <div class='contenedorFormulario'>
-        <form class='formulario' action="./logica/crear.php" method="POST">
-            <input class='caja' type="text" name="isbn" placeholder="ISBN">
-            <input class='caja' type="text" name="titulo" placeholder="Título">
-            <input class='caja' type="text" name="autor" placeholder="Autor">
-            <input class='caja' type="text" name="descripcion" placeholder="Descripción">
-            <input class='caja' type="text" name="portada" placeholder="Portada">
-
-                    <input class='btnCrear' type="submit" value="Crear">
-                </form>
+    <div class='box0'>
+        <header>
+            <nav class="nav">
+                <h1>Añadir</h1>
+                <ul>
+                    <li><a href="./indice.php">Libreria</a></li>
+                    <li><a href="./formulario.php">Crear Registro</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div>
+            <form class='formulario' action="./logica/crear.php" method="POST">
+                <input class='caja' type="text" name="isbn" placeholder="ISBN">
+                <input class='caja' type="text" name="titulo" placeholder="Título">
+                <input class='caja' type="text" name="autor" placeholder="Autor">
+                <input class='caja' type="text" name="descripcion" placeholder="Descripción">
+                <input class='caja' type="text" name="portada" placeholder="Portada">
+                
+                <input class='btnCrear' type="submit" value="Crear">
+            </form>
+        </div>
     </div>
-</body>
+    </body>
 </html>
