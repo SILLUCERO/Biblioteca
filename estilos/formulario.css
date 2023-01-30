@@ -51,7 +51,7 @@
 
   .btnCrear {
     border: none;
-    background-color: var(--c-btn-delete);
+    background-color: var(--c-btn-view);
     color: var(--c-text);
     border-radius: 10px;
     width: 30%;
