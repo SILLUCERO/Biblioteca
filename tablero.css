@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,400&display=swap');
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"); 
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
 
 :root {
   --c-background: #FFFFFF;
@@ -23,152 +23,181 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Lato', sans-serif;
+  font-family: var(--font);
   text-decoration: none;
   list-style-type: none;
 }
-a{
+
+a {
   color: inherit;
 }
+
 .box {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  width: 99vw;
+
 }
+
 .tablero {
-  width: 80vw;
   display: grid;
   justify-items: center;
   grid-template-columns: repeat(1, 1fr);
   gap: 2rem 0;
 }
+
 .libro {
   background-color: var(--c-card);
   display: flex;
   flex-direction: column;
   padding: 4%;
   border-radius: 10px;
-  width: 100%;
+  width: 85%;
 }
+
 .titulo {
   background-color: var(--c-gap);
   display: flex;
   align-items: center;
   padding: 2% 5%;
-  /* width: 100%; */
   height: 45px;
 }
+
 .box1 {
   display: flex;
   margin-top: 4%;
 }
-.caja{
+
+.caja {
   display: flex;
   width: 70%;
 }
-.boxI{
+
+.boxI {
   overflow: hidden;
   border-radius: 10px;
-  width: 200px;
+  width: 220px;
   height: 300px;
 }
-.boxI img{
-  width: 100%;
+
+.boxI img {
+  width: 90%;
   height: fit-content;
 }
 
 .btns {
   display: none;
 }
-.btnsIcons{
+
+.btnsIcons {
   display: flex;
   flex-direction: column;
   width: 100%;
 }
-.btnsIcons a{
+
+.btnsIcons a {
   color: var(--c-text);
   margin-bottom: 10%;
   margin-left: 10%;
   padding: 10%;
-  
+
   border-radius: 10px;
 }
-.bi{
+
+.bi {
   font-size: 1.2rem;
 }
-.btnsIcons .eye, .btns .eye{
+
+.btnsIcons .eye,
+.btns .eye {
   background-color: var(--c-btn-view);
   border: 1.5px solid var(--c-btn-view-border);
-
 }
-.btnsIcons .pencil, .btns .pencil{
+
+.btnsIcons .pencil,
+.btns .pencil {
   background-color: var(--c-btn-edit);
   border: 1.5px solid var(--c-btn-edit-border);
 }
-.btnsIcons .trash, .btns .trash{
+
+.btnsIcons .trash,
+.btns .trash {
   background-color: var(--c-btn-delete);
   border: 1.5px solid var(--c-btn-delete-border);
 }
-.btnsIcons i{
-  display:flex;
+
+.btnsIcons i {
+  display: flex;
   justify-content: center;
 }
 
-@media (min-width: 768px){
-.tablero{
-  width: 80vw;
-     grid-template-columns: repeat(3, 1fr);
-      gap: 2rem ;
-}
-.caja{
-  width: 70%;
-}
-.btnsIcons{
-  width: 30%;
-} 
-.btnsIcons a{
-  margin-bottom: 10%;
-}
+@media (min-width: 768px) {
+  .tablero {
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+
+  .caja {
+    width: 70%;
+  }
+  .boxI {
+    height: 250px;
+  }
+
+  .btnsIcons {
+    width: 30%;
+  }
+
+  .btnsIcons a {
+    margin-bottom: 10%;
+  }
 }
 
-@media (min-width: 992px){ 
-  .tablero{
+@media (min-width: 992px) {
+  .tablero {
     grid-template-columns: repeat(4, 1fr);
-    width: 90vw;
- }
- .caja{
-  width: 100%;
-}
-.boxI{
-  overflow: hidden;
-  border-radius: 10px;
-  width: 100px;
-  height: 200px;
-}
-.btns {
-  display: flex;
-  flex-direction: column;
-}
-.btnsIcons{
-  display: none;
-}
+  }
 
-}
+  .boxI {
+    width: 100px;
+    height: 200px;
+  }
 
-@media(min-width: 1024px){
-  .tablero{
-    /* grid-template-columns: repeat(6, 1fr); */
- }
+  .btns {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+
+  .btnsIcons {
+    display: none;
+  }
+  .btns a{
+    border-radius: 10px;
+    margin-bottom: 10%;
+    font-size: 14px;
+    padding: 5%;
+    width: 100%;
+  }
+
 }
 
 @media(min-width: 1024px) {
-  .tablero{
-    display: grid;
-    /* grid-template-columns: repeat(6, 1fr); */
- }
+  .tablero {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
-
-/* @media (min-width: 1400px) { ... } */
-
+@media (min-width: 1400px) { 
+  .tablero{
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+@media (min-width: 2500px) { 
+  .tablero{
+    grid-template-columns: repeat(7, 1fr);
+  }
+}

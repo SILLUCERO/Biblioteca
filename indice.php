@@ -24,7 +24,7 @@ $query = mysqli_query($con, $sql);
 
 <body>
     <div class="box">
-        <header>
+        <!-- <header>
             <nav class="nav">
                 <h1>Libros</h1>
                 <ul>
@@ -32,7 +32,7 @@ $query = mysqli_query($con, $sql);
                     <li><a href="./formulario.php">Crear Registro</a></li>
                 </ul>
             </nav>
-        </header>
+        </header> -->
         <main class="tablero">
             <?php
             while ($row = mysqli_fetch_array($query)) : ?>
