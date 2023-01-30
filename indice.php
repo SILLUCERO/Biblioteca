@@ -18,20 +18,36 @@ $query = mysqli_query($con, $sql);
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./estilo.css">
+    <link rel="stylesheet" type="text/css" href="../estilos/encabezado.css">
+    <link rel="stylesheet" type="text/css" href="../estilos/tablero.css">
     <title>Biblioteca</title>
 </head>
 
 <body>
     <div class="box">
-        <header>
-            <nav class="nav">
-                <h1>Libros</h1>
-                <ul>
-                    <li><a href="./indice.php">Libreria</a></li>
-                    <li><a href="./formulario.php">Crear Registro</a></li>
-                </ul>
-            </nav>
+    <header class="nav">
+            <div class="imagotipo">
+                <div class="img_isologo">
+                    <img src="./assets/img_logo.png" alt="isologo de Smart Books">            
+                </div>
+                <div class="sb_logotipo">
+                    <h2>Smart Books</h2>
+                </div>
+            </div>
+            <div class=acciones_barra>
+                <div class="biblioteca">
+                    <a href="./indice.php">Biblioteca</a>
+                </div>                  
+                <div class="formulario"> 
+                    <a href="./formulario.php">Crear Registro</a>
+                </div>
+                <div class="buscar">
+                <form class=buscar_ok action="indice.php" method="POST">
+                    <input type="text" id="palabras_clave" name="keywords" size="30" maxlength="30" value="Buscar...">
+                    <input type="submit" name="buscar" id="search" value="OK">
+                </form>
+                </div>
+            </div>
         </header>
         <main class="tablero">
             <?php

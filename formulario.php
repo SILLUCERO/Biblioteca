@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biblioteca</title>
-    <link rel="stylesheet" href="./formulario.css" />
+    <link rel="stylesheet" href="./estilos/encabezado.css" />
+    <link rel="stylesheet" href="./estilos/style.css" />
+    <link rel="stylesheet" href="./estilos/formulario.css" />
 </head>
 <body>
     <div class='box0'>
