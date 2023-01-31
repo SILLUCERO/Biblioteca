@@ -38,6 +38,29 @@ align-items: center;
   font-style: italic;
   
 }
+.btnsIconsDetalle{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 6.5%;
+}
+.btnsIconsDetalle a{
+  color: var(--c-text);
+  margin-bottom: 10%;
+  padding: 10%;
+  width: 40%;
+  border-radius: 10px;
+  text-align: center;
+}
+.btnsIconsDetalle .pencil,
+.btns .pencil {
+  background-color: var(--c-btn-edit);
+  border: 1.5px solid var(--c-btn-edit-border);
+}
+.btnsIconsDetalle .trash,
+.btns .trash {
+  background-color: var(--c-btn-delete);
+  border: 1.5px solid var(--c-btn-delete-border);
+}
 /* .btnIcons a{
   color: var(--c-text);
   border-radius: 10px;

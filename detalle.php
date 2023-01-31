@@ -57,19 +57,13 @@ $query = mysqli_query($con, $sql);
                             <p><?= $row['autor'] ?></p>
                         </div>
                         <div class='container6'>
-                            <p><?= $row['ISBN'] ?></p>
+                            <p><strong><?= $row['ISBN'] ?></strong></p>
                             <p><?= $row['descripcion'] ?></p>
                         </div>
                     </main>
                 </div>
-                <div class="btns">
-                    <a class="eye" href="detalle.php?id=<?= $row['id'] ?>">Ver info.</a>
-                    <a class="pencil" href="edicion-formulario.php?id=<?= $row['id'] ?>">Editar</a>
-                    <a class="trash" href="./logica/borrar.php?id=<?= $row['id'] ?>">Borrar</a>
-                </div>
 
-                <div class="btnsIcons">
-                    <a class="eye" href="detalle.php?id=<?= $row['id'] ?>"><i class="bi bi-eye-fill"></i></a>
+                <div class="btnsIconsDetalle">
                     <a class="pencil" href="edicion-formulario.php?id=<?= $row['id'] ?>"><i class="bi bi-pencil-fill"></i></a>
                     <a class="trash" href="./logica/borrar.php?id=<?= $row['id'] ?>" class="trash"><i class="bi bi-trash3-fill"></i></a>
                 </div>
