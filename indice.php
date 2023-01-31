@@ -43,17 +43,29 @@ $query = mysqli_query($con1, $sql);
                 <div class="formulario"> 
                     <a href="./formulario.php">Crear Registro</a>
                 </div>
- 
+   
                 <form action="indice.php" method="POST">
-                    <input type="text" name="buscar">
-                    <input type="submit" value="Buscar">
-                </form> 
-                
-            </div>
-        </header>
+                     <input type="text" name="buscar">
+                     <input type="submit" value="Buscar">
+               </form> 
+           </div>
 
+    </header>
 
+<?php
+
+   while ($row = mysqli_fetch_array($sql_query)){ ?>
+
+     <tr>
+       <td><?= $row['id']  ?></td>
+       <td><?= $row['ISBN']  ?> </td>
+       <td><?= $row['titulo']  ?> </td>
+       <td><?= $row['autor']  ?> </td>
+     </tr>
+
+<?php } 
 ?>
+
 
 
         <main class="tablero">
