@@ -6,9 +6,18 @@ include 'read.php';
 
 
 
-$sql = "SELECT * FROM libros ";
+// $sql = "SELECT * FROM libros ";
 
-$query = mysqli_query($con1, $sql);
+
+
+$SQL_READ = "SELECT * FROM `libros` 
+WHERE id LIKE '%$buscar%' OR
+     ISBN LIKE '%$buscar%' OR
+     autor LIKE '%$buscar%' OR
+     titulo LIKE '%$buscar%' ";
+
+
+$query = mysqli_query($con1, $SQL_READ);
 
 ?>
 <!DOCTYPE html>
@@ -52,7 +61,7 @@ $query = mysqli_query($con1, $sql);
 
     </header>
 
-<?php
+<!-- <?php
 
    while ($row = mysqli_fetch_array($sql_query)){ ?>
 
@@ -64,7 +73,7 @@ $query = mysqli_query($con1, $sql);
      </tr>
 
 <?php } 
-?>
+?> -->
 
 
 
