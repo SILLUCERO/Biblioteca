@@ -1,86 +1,84 @@
 .nav {
-    display:flex;
+    display: flex;
     flex-direction: row;
+    justify-content: space-between;
     align-items: center;
     padding: 2.5rem;
     height: 2rem;
-    width:100%;
+    width: 100%;
     background-color: var(--c-window);
 }
 
+.imagotipo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
 
-    .imagotipo {
-        display:flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: left;
-    }
+.img_isologo {
+    display: flex;
+    justify-content: center;
+    width: 4rem;
+    height: 4rem;
+}
 
-        .img_isologo {
-            display:flex;
-            justify-content: center;
-            width: 4rem;
-            height: 4rem;
-            margin: 0.5% 2% 0.5% 11%
-        }
+.sb_logotipo {
+    width: 15rem;
+    color: var(--c-text);
+}
 
-        .sb_logotipo {
-            display:flex;
-            width: 8rem;
-            color: var(--c-text);
-        }
+.acciones_barra {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+}
 
-    .acciones_barra {
-        display:flex;
-        flex-direction:row;
-        align-items: center;
-    }
+.biblioteca {
+    display: flex;
+    align-items: center;
+    margin-right: 5%;
+    text-decoration: none;
+    padding: 1%;
+    height: 1.5rem;
+    border-radius: 10px;
+    background-color: var(--c-gap);
 
-        .biblioteca {
-            display:flex;
-            align-items: center;
-            margin-right:5%;
-            text-decoration:none;
-            padding:1%;
-            height:1.5rem;
-            border-radius: 10px;
-            background-color: var(--c-gap);
-            
-        }
+}
 
-            .biblioteca a {
-                display:flex;
-                justify-content: center;
-                padding: 10%;
-                width: 9rem;
-            }
+.biblioteca a {
+    display: flex;
+    justify-content: center;
+    padding: 10%;
+    width: 9rem;
+}
 
-        .formulario {
-            display:flex;
-            align-items: center;
-            margin-right:5%;
-            text-decoration:none;
-            padding:1%;
-            height:1.5rem;
-            border-radius: 10px;
-            background-color: var(--c-gap);
+.crear_formulario {
+    display: flex;
+    align-items: center;
+    margin-right: 5%;
+    text-decoration: none;
+    padding: 1%;
+    height: 1.5rem;
+    border-radius: 10px;
+    background-color: var(--c-gap);
+}
 
-        }
+.crear_formulario a {
+    display: flex;
+    justify-content: center;
+    padding: 10%;
+    width: 9rem;
+}
 
-            .formulario a {
-                display:flex;
-                justify-content: center;
-                padding: 10%;
-                width: 9rem;
-            }
+.buscar_ok {
+    display: flex;
+    padding: 10%;
+    width: 10%;
+}
 
-        .buscar_ok {
-            display:flex;
-            width: 10%;
-        }
-
-        #palabras_clave {
-            color: var(--c-text-fill);
-            background-color: var(--c-gap);
-            padding: 1%;
-        }
+#palabras_clave {
+    color: var(--c-text-fill);
+    background-color: var(--c-gap);
+    padding: 1%;
+}
