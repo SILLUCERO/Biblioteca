@@ -7,6 +7,7 @@
     height: 2rem;
     width: 100%;
     background-color: var(--c-window);
+    margin-bottom: 2%;
 }
 
 .imagotipo {
