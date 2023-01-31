@@ -1,0 +1,45 @@
+:root {
+    --c-background: #FFFFFF;
+    --c-window: #B6BBD6;
+    --c-gap: #ECECEC;
+    --c-card: #D9D9D9;
+  
+    --c-btn-view-border: #83D77B;
+    --c-btn-view: rgb(131, 215, 123, 0.6);
+    --c-btn-edit-border: #6895BE;
+    --c-btn-edit: rgb(104, 149, 190, 0.6);
+    --c-btn-delete-border: #CC8282;
+    --c-btn-delete: rgb(204, 130, 130, 0.6);
+  
+    --c-text: #393535;
+    --c-text-fill: #BBB4B4;
+    --font: 'Lato', sans-serif;
+  }
+
+.container1{
+  background-color: var(--c-card);
+  display: flex;
+  flex-direction: column;
+  
+
+}
+.btnIcons a{
+  color: var(--c-text);
+  border-radius: 10px;
+}
+
+.btnIcons .editar{
+
+  background-color: var(--c-btn-edit);
+  /* border: 1.5px solid var(--c-btn-edit-border); */
+}
+.btnIcons .borrar{
+  background-color: var(--c-btn-delete);
+  /* border: 6px solid var(--c-btn-delete-border) */;
+  border: none;
+  color: var(--c-text);
+  
+    
+ 
+  
+}
