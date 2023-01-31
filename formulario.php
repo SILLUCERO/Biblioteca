@@ -5,12 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biblioteca</title>
-    <link rel="stylesheet" href="./estilos/encabezado.css" />
-    <link rel="stylesheet" href="./estilos/style.css" />
-    <link rel="stylesheet" href="./estilos/formulario.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="http://localhost/Biblioteca/estilos/style.css"> -->
+    <link rel="stylesheet" type="text/css" href="http://localhost:8888/Biblioteca/estilos/style.css">
 </head>
 <body>
-    <div class='box0'>
+    <div class="box0">
         <header>
             <nav class="nav">
                 <h1>Añadir</h1>
@@ -21,12 +20,12 @@
             </nav>
         </header>
         <div>
-            <form class='formLibros' action="./logica/crear.php" method="POST">
-                <input class='caja' type="text" name="isbn" placeholder="ISBN">
-                <input class='caja' type="text" name="titulo" placeholder="Título">
-                <input class='caja' type="text" name="autor" placeholder="Autor">
-                <input class='caja' type="text" name="descripcion" placeholder="Descripción">
-                <input class='caja' type="text" name="portada" placeholder="Portada">
+            <form class="formLibros" action="./logica/crear.php" method="POST">
+                <input class="boxDatos" type="text" name="isbn" placeholder="ISBN">
+                <input class="boxDatos" type="text" name="titulo" placeholder="Título">
+                <input class="boxDatos" type="text" name="autor" placeholder="Autor">
+                <input class="boxDatos" type="text" name="descripcion" placeholder="Descripción">
+                <input class="boxDatos" type="text" name="portada" placeholder="Portada">
                 
                 <input class='btnCrear' type="submit" value="Crear">
             </form>

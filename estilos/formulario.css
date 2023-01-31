@@ -1,38 +1,3 @@
-/* :root {
-  --c-background: #FFFFFF;
-  --c-window: #B6BBD6;
-  --c-gap: #ECECEC;
-  --c-card: #D9D9D9;
-
-  --c-btn-view-border: #83D77B;
-  --c-btn-view: rgb(131, 215, 123, 0.6);
-  --c-btn-edit-border: #6895BE;
-  --c-btn-edit: rgb(104, 149, 190, 0.6);
-  --c-btn-delete-border: #CC8282;
-  --c-btn-delete: rgb(204, 130, 130, 0.6);
-
-  --c-text: #393535;
-  --c-text-fill: #BBB4B4;
-  --font: 'Lato', sans-serif;
-}
-
-* {
-margin:0;
-padding:0;
-font-family: var(--font);
-color: var(--c-text);
-box-sizing: border-box;
-text-decoration: none;
-list-style-type: none;  
-}
- 
-  
-.box0 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-} */
 
 .formLibros {
     display: flex;
@@ -42,36 +7,36 @@ list-style-type: none;
     background-color: var(--c-card);
     border-radius: 10px;
     padding: 10%;
-  }
+}
 
-.caja {
-    width: 100%;
-    border: none;
-    background-color: var(--c-gap);
-    color: var(--c-text-fill);
-    border-radius: 10px;
-    padding: 5% 2%;
-    margin: 4% 0;
-  }
+.boxDatos {
+  width: 100%;
+  border: none;
+  background-color: var(--c-gap);
+  color: var(--c-text-fill);
+  border-radius: 10px;
+  padding: 5% 2%;
+  margin: 4% 0;
+}
 
-  .btnCrear {
-    border: none;
-    background-color: var(--c-btn-view);
-    color: var(--c-text);
-    border-radius: 10px;
-    width: 30%;
-    padding: 5% 2%;
-    margin: 10% 0;
-    align-self:flex-end;
-  }
+.btnCrear {
+  border: none;
+  background-color: var(--c-btn-view);
+  color: var(--c-text);
+  border-radius: 10px;
+  width: 30%;
+  padding: 5% 2%;
+  margin: 10% 0;
+  align-self:flex-end;
+}
 
-  .btnConfirmar {
-    border: none;
-    background-color: var(--c-btn-edit);
-    color: var(--c-text);
-    border-radius: 10px;
-    width: 30%;
-    padding: 5% 2%;
-    margin: 10% 0;
-    align-self:flex-end;
-  }
+.btnConfirmar {
+  border: none;
+  background-color: var(--c-btn-edit);
+  color: var(--c-text);
+  border-radius: 10px;
+  width: 30%;
+  padding: 5% 2%;
+  margin: 10% 0;
+  align-self:flex-end;
+}
