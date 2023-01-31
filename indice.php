@@ -1,14 +1,14 @@
 <?php
 
-include('./logica/conexion.php');
-$con = conectar();
+//include('./logica/conexion.php');
+include 'read.php';
 
 
 
 
 $sql = "SELECT * FROM libros ";
 
-$query = mysqli_query($con, $sql);
+$query = mysqli_query($con1, $sql);
 
 ?>
 <!DOCTYPE html>
@@ -43,14 +43,11 @@ $query = mysqli_query($con, $sql);
                 <div class="formulario"> 
                     <a href="./formulario.php">Crear Registro</a>
                 </div>
-
-
-                <!-- <div class="buscar">
-                <form class=buscar_ok action="indice.php" method="POST">
-                    <input type="text" id="palabras_clave" name="keywords" size="30" maxlength="30" value="Buscar...">
-                    <input type="submit" name="buscar" id="search" value="OK">
-                </form>
-                </div> -->
+ 
+                <form action="indice.php" method="POST">
+                    <input type="text" name="buscar">
+                    <input type="submit" value="Buscar">
+                </form> 
                 
             </div>
         </header>

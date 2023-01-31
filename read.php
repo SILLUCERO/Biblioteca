@@ -1,6 +1,7 @@
 <?php
 
-// include 'logica/conexion.php';
+ include ('./logica/conexion.php');
+$con1= conectar();
 
 if(!isset($_POST['buscar'])){
      $_POST['buscar'] = "";
@@ -18,7 +19,7 @@ WHERE id LIKE '%$buscar%' OR
      titulo LIKE '%$buscar%' ";
 
 
-$sql_query = mysqli_query($con, $SQL_READ);
+$sql_query = mysqli_query($con1, $SQL_READ);
 
 
 
