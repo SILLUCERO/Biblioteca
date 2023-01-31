@@ -6,7 +6,8 @@
     width: 50vw;
     background-color: var(--c-card);
     border-radius: 10px;
-    padding: 10%;
+    padding: 8%;
+    margin: 4% 0;
 }
 
 .boxDatos {
@@ -40,3 +41,27 @@
   margin: 10% 0;
   align-self:flex-end;
 }
+
+@media (min-width: 768px) {
+  .formLibros {
+    width: 45vw;
+}  
+}
+
+@media (min-width: 992px) {
+  .formLibros {
+    width: 40vw;
+}  
+}
+
+@media (min-width: 1024px) {
+  .formLibros {
+    width: 33vw;
+}  
+}
+
+/* @media (min-width: 1024px) {
+  .formLibros {
+    width: 50vw;
+}  
+} */
