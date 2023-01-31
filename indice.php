@@ -27,7 +27,7 @@ $query = mysqli_query($con1, $sql);
 
 <body>
     <div class="box0">
-    <header class="nav">
+        <header class="nav">
             <div class="imagotipo">
                 <div class="img_isologo">
                     <img src="./assets/img_logo.png" alt="Isologo de Smart Books">            
@@ -73,8 +73,7 @@ $query = mysqli_query($con1, $sql);
             while ($row = mysqli_fetch_array($query)) : ?>
                 <div class="libro">
                     <div class="titulo">
-                        <h4><?= $row['titulo'] ?></h4>
-                        <!-- <p><?= $row['autor'] ?></p> -->
+                        <h4><?= substr($row['titulo'], 0, 23)?> ...</h4>
                     </div>
                     <div class="box1">
                         <div class="caja">
