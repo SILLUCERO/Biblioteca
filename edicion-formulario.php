@@ -30,17 +30,31 @@ $row = mysqli_fetch_array($query);
 
 <body>
     <div class='box0'>
-        <header>
-            <nav class="nav">
-                <h1>Editar</h1>
-                <ul>
-                    <li><a href="./indice.php">Libreria</a></li>
-                    <li><a href="./formulario.php">Crear Registro</a></li>
-                </ul>
-            </nav>
+    <header class="nav">
+            <div class="imagotipo">
+                <div class="img_isologo">
+                    <img src="./assets/img_logo.png" alt="Isologo de Smart Books">            
+                </div>
+                <div class="sb_logotipo">
+                    <h2>Smart Books</h2>
+                </div>
+            </div>
+            <div class=acciones_barra>
+                <div class="biblioteca">
+                    <a href="./indice.php">Biblioteca</a>
+                </div>                  
+                <div class="crear_formulario"> 
+                    <a href="./formulario.php">Crear Registro</a>
+                </div>
+                <div class="buscar">
+                <form class=buscar_ok action="indice.php" method="POST">
+                    <input type="text" id="palabras_clave" name="keywords" size="30" maxlength="30" value="Buscar...">
+                    <input type="submit" name="buscar" id="search" value="OK">
+                </form>
+                </div>
+            </div>
         </header>
         <div>
-            <h1>Editar este registro</h1>
             <form class="formLibros" action="./logica/actualizar.php" method="POST">
                 <input class="boxDatos" type="hidden" name="id" value="<?= $row['id'] ?>">
                 <input class="boxDatos" type="text" name="isbn" placeholder="ISBN" value="<?= $row['ISBN'] ?>">
