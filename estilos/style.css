@@ -1,11 +1,11 @@
-@import url("http://localhost/biblioteca/estilos/encabezado.css");
-@import url("http://localhost/biblioteca/estilos/formulario.css");
-@import url("http://localhost/biblioteca/estilos/tablero.css");
+/* @import url("http://localhost/Biblioteca/estilos/encabezado.css");
+@import url("http://localhost/Biblioteca/estilos/formulario.css");
+@import url("http://localhost/Biblioteca/estilos/tablero.css"); */
 
 
-/* @import url("http://localhost:8888/biblioteca/estilos/encabezado.css");
-@import url("http://localhost:8888/biblioteca/estilos/formulario.css");
-@import url("http://localhost:8888/biblioteca/estilos/tablero.css"); */
+@import url("http://localhost:8888/Biblioteca/estilos/encabezado.css");
+@import url("http://localhost:8888/Biblioteca/estilos/formulario.css");
+@import url("http://localhost:8888/Biblioteca/estilos/tablero.css");
 
 /* @import url("encabezado.css");
 @import url("formulario.css");
@@ -15,7 +15,6 @@
 
 :root {
   --c-background: #FFFFFF;
-  --c-window: #B6BBD6;
   --c-gap: #ECECEC;
   --c-card: #D9D9D9;
 
@@ -31,30 +30,26 @@
   --font: 'Lato', sans-serif;
 }
 
-  *{
-    margin:0;
-    padding:0;
-    font-family: var(--font);
-    color: var(--c-text);
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style-type: none;
-    
-  }
+* {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font);
+  color: var(--c-text);
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
 
-  a:link, a:visited, a:active {
-    text-decoration:none;
-  }
+}
 
-  .box0 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+}
 
-
-
-
-
-  
+.box0 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}

@@ -121,6 +121,7 @@ a {
   .caja {
     width: 70%;
   }
+
   .boxI {
     height: 250px;
   }
@@ -153,7 +154,8 @@ a {
   .btnsIcons {
     display: none;
   }
-  .btns a{
+
+  .btns a {
     border-radius: 10px;
     margin-bottom: 10%;
     font-size: 14px;
@@ -169,13 +171,14 @@ a {
   }
 }
 
-@media (min-width: 1400px) { 
-  .tablero{
+@media (min-width: 1400px) {
+  .tablero {
     grid-template-columns: repeat(5, 1fr);
   }
 }
-@media (min-width: 2500px) { 
-  .tablero{
+
+@media (min-width: 2500px) {
+  .tablero {
     grid-template-columns: repeat(7, 1fr);
   }
 }

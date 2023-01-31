@@ -18,15 +18,15 @@ $query = mysqli_query($con, $sql);
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="http://localhost/Biblioteca/estilos/style.css">
+    <!-- <link rel="stylesheet" type="text/css" href="http://localhost/Biblioteca/estilos/style.css"> -->
 
-    <!-- <link rel="stylesheet" type="text/css" href="http://localhost:8888/Biblioteca/estilos/style.css"> -->
+    <link rel="stylesheet" type="text/css" href="http://localhost:8888/Biblioteca/estilos/style.css">
 
     <title>Biblioteca</title>
 </head>
 
 <body>
-    <div class="box">
+    <div class="box0">
     <header class="nav">
             <div class="imagotipo">
                 <div class="img_isologo">
@@ -40,7 +40,7 @@ $query = mysqli_query($con, $sql);
                 <div class="biblioteca">
                     <a href="./indice.php">Biblioteca</a>
                 </div>                  
-                <div class="formulario"> 
+                <div class="crear_formulario"> 
                     <a href="./formulario.php">Crear Registro</a>
                 </div>
                 <div class="buscar">
