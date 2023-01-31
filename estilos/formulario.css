@@ -1,14 +1,15 @@
-.formulario {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 50vw;
-  background-color: var(--c-background-box);
-  border-radius: 10px;
-  padding: 10%;
+
+.formLibros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50vw;
+    background-color: var(--c-card);
+    border-radius: 10px;
+    padding: 10%;
 }
 
-.caja {
+.boxDatos {
   width: 100%;
   border: none;
   background-color: var(--c-gap);
@@ -26,5 +27,16 @@
   width: 30%;
   padding: 5% 2%;
   margin: 10% 0;
-  align-self: flex-end;
+  align-self:flex-end;
+}
+
+.btnConfirmar {
+  border: none;
+  background-color: var(--c-btn-edit);
+  color: var(--c-text);
+  border-radius: 10px;
+  width: 30%;
+  padding: 5% 2%;
+  margin: 10% 0;
+  align-self:flex-end;
 }

@@ -22,7 +22,10 @@ $row = mysqli_fetch_array($query);
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./edicion-formulario.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="http://localhost/Biblioteca/estilos/style.css"> -->
+
+    <link rel="stylesheet" type="text/css" href="http://localhost:8888/Biblioteca/estilos/style.css">
+
 </head>
 
 <body>
@@ -38,15 +41,15 @@ $row = mysqli_fetch_array($query);
         </header>
         <div>
             <h1>Editar este registro</h1>
-            <form class="formulario" action="./logica/actualizar.php" method="POST">
-                <input class="caja" type="hidden" name="id" value="<?= $row['id'] ?>">
-                <input class="caja" type="text" name="isbn" placeholder="ISBN" value="<?= $row['ISBN'] ?>">
-                <input class="caja" type="text" name="titulo" placeholder="Título" value="<?= $row['titulo'] ?>">
-                <input class="caja" type="text" name="autor" placeholder="Autor" value="<?= $row['autor'] ?>">
-                <input class="caja" type="text" name="descripcion" placeholder="Descripción" value="<?= $row['descripcion'] ?>">
-                <input class="caja" type="text" name="portada" placeholder="Portada" value="<?= $row['portada'] ?>">
+            <form class="formLibros" action="./logica/actualizar.php" method="POST">
+                <input class="boxDatos" type="hidden" name="id" value="<?= $row['id'] ?>">
+                <input class="boxDatos" type="text" name="isbn" placeholder="ISBN" value="<?= $row['ISBN'] ?>">
+                <input class="boxDatos" type="text" name="titulo" placeholder="Título" value="<?= $row['titulo'] ?>">
+                <input class="boxDatos" type="text" name="autor" placeholder="Autor" value="<?= $row['autor'] ?>">
+                <input class="boxDatos" type="text" name="descripcion" placeholder="Descripción" value="<?= $row['descripcion'] ?>">
+                <input class="boxDatos" type="text" name="portada" placeholder="Portada" value="<?= $row['portada'] ?>">
                 
-                <input class="btnCrear" type="submit" value="Confirmar">
+                <input class="btnConfirmar" type="submit" value="Confirmar">
             </form>
         </div>
     </div>
