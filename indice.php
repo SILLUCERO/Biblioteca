@@ -28,7 +28,7 @@ $query = mysqli_query($con, $sql);
 </head>
 
 <body>
-    <div class="box">
+    <div class="box0">
     <header class="nav">
             <div class="imagotipo">
                 <div class="img_isologo">
