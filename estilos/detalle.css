@@ -1,0 +1,57 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+
+.ventana{
+  background-color: var(--c-card);
+  display: flex;
+  flex-direction: column;
+  padding: 6%;
+  width:80% ;
+}
+.container2{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.container3{
+  width: 100px;
+  overflow: hidden;
+  margin-bottom: 5%;
+}
+.container3 img{
+  width: 100%;
+  height: fit-content;
+
+}
+
+.container4{
+  width: 100%;
+}
+.container5, .container6{
+  background-color: var(--c-gap);
+  padding: 10%;
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 5%; 
+}
+.container5 p{
+  font-style: italic;
+  
+}
+/* .btnIcons a{
+  color: var(--c-text);
+  border-radius: 10px;
+  margin-right: 50%;
+}
+.btnIcons .editar{
+
+  background-color: var(--c-btn-edit);
+  
+}
+.btnIcons .borrar{
+  background-color: var(--c-btn-delete);
+  border: none;
+  color: var(--c-text);
+
+}
+ */
