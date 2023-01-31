@@ -151,7 +151,24 @@
     top: 50%;
     transform: translateY(-50%);
   }
+  .bi-search1 {
+    color: var(--c-text);
+    position: absolute;
+    height: 50%;
+    width: 10%;
+    border-radius: none;
+    right: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
   .bi-search::before{
     font-size: initial;
+  }
+
+  @media (min-width: 768px) {
+    .logo{
+        /* padding: 2% 75%; */
+        background-color: #191919;
+    }
   }
 

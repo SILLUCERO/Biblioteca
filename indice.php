@@ -53,11 +53,11 @@ $query = mysqli_query($con1, $SQL_READ);
                 <a href="./formulario.php">Crear Libro</a>
                 <!-- </div> -->
                 <form action="indice.php" method="POST" class="input-wrapper">
-                    <label for="buscar" >
-                        <input type="search" class="input" name="buscar" placeholder="Buscar...">
-
+                    <label for="buscar">
+                        <input type="text" class="input" name="buscar" placeholder="Buscar...">
+                        <!-- <input type="submit" class="bi-search1" value=""> -->
                         <i class="bi bi-search"></i>
-                        <!-- <input type="text" name="buscar"><input type="submit" value="B"></input> -->
+                        <!-- <input type="text" name="buscar"><input type="submit" value="Buscar"></input> -->
                     </label>
 
                 </form>
