@@ -1,6 +1,6 @@
 <?php
 
-include("coneccion.php");
+include("conexion.php");
 $con=conectar();
 $id=$_POST['id'];
 $isbn=$_POST['isbn'];

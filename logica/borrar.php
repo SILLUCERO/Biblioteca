@@ -1,6 +1,6 @@
 <?php
 
-include("coneccion.php");
+include("conexion.php");
 $con=conectar();
 
 $datos_id=$_GET['id'];

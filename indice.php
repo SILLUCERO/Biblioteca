@@ -1,14 +1,23 @@
 <?php
 
-include('./logica/conexion.php');
-$con = conectar();
+//include('./logica/conexion.php');
+include 'read.php';
 
 
 
 
-$sql = "SELECT * FROM libros ";
+// $sql = "SELECT * FROM libros ";
 
-$query = mysqli_query($con, $sql);
+
+
+$SQL_READ = "SELECT * FROM `libros` 
+WHERE id LIKE '%$buscar%' OR
+     ISBN LIKE '%$buscar%' OR
+     autor LIKE '%$buscar%' OR
+     titulo LIKE '%$buscar%' ";
+
+
+$query = mysqli_query($con1, $SQL_READ);
 
 ?>
 <!DOCTYPE html>
@@ -26,8 +35,8 @@ $query = mysqli_query($con, $sql);
 </head>
 
 <body>
-    <div class="box">
-    <header class="nav">
+    <div class="box0">
+        <header class="nav">
             <div class="imagotipo">
                 <div class="img_isologo">
                     <img src="./assets/img_logo.png" alt="Isologo de Smart Books">            
@@ -43,21 +52,37 @@ $query = mysqli_query($con, $sql);
                 <div class="formulario"> 
                     <a href="./formulario.php">Crear Registro</a>
                 </div>
-                <div class="buscar">
-                <form class=buscar_ok action="indice.php" method="POST">
-                    <input type="text" id="palabras_clave" name="keywords" size="30" maxlength="30" value="Buscar...">
-                    <input type="submit" name="buscar" id="search" value="OK">
-                </form>
-                </div>
-            </div>
-        </header>
+   
+                <form action="indice.php" method="POST">
+                     <input type="text" name="buscar">
+                     <input type="submit" value="Buscar">
+               </form> 
+           </div>
+
+    </header>
+
+<!-- <?php
+
+   while ($row = mysqli_fetch_array($sql_query)){ ?>
+
+     <tr>
+       <td><?= $row['id']  ?></td>
+       <td><?= $row['ISBN']  ?> </td>
+       <td><?= $row['titulo']  ?> </td>
+       <td><?= $row['autor']  ?> </td>
+     </tr>
+
+<?php } 
+?> -->
+
+
+
         <main class="tablero">
             <?php
             while ($row = mysqli_fetch_array($query)) : ?>
                 <div class="libro">
                     <div class="titulo">
-                        <h4><?= $row['titulo'] ?></h4>
-                        <!-- <p><?= $row['autor'] ?></p> -->
+                        <h4><?= substr($row['titulo'], 0, 23)?> ...</h4>
                     </div>
                     <div class="box1">
                         <div class="caja">

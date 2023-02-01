@@ -2,8 +2,8 @@
 function conectar(){
     $host="localhost";
     $user="root";
-    //$pass="";
     $pass="";
+    //$pass="root";
     $bd="biblioteca";
 
     $con = mysqli_connect($host, $user, $pass);
