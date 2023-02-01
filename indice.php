@@ -37,14 +37,17 @@ $query = mysqli_query($con1, $SQL_READ);
 <body>
     <div class="box0">
         <header class="header">
-            <div class="logo">
+            <!-- <div > -->
+            <a href="./indice.php" class="logo">
+
                 <!-- <div class="img_isologo"> -->
                 <img src="./assets/img_logo.png" alt="Isologo de Smart Books">
                 <!-- </div> -->
                 <!-- <div class="sb_logotipo"> -->
                 <h1>Smart Books</h1>
                 <!-- </div> -->
-            </div>
+            </a>
+            <!-- </div> -->
             <div class=acciones_barra>
                 <!-- <div class="biblioteca"> -->
                 <a href="./indice.php">Biblioteca</a>
@@ -56,7 +59,7 @@ $query = mysqli_query($con1, $SQL_READ);
                     <label for="buscar">
                         <input type="text" class="input" name="buscar" placeholder="Buscar...">
                         <!-- <input type="submit" class="bi-search1" value=""> -->
-                        <i class="bi bi-search"></i>
+                        <button class="bi-search"></button>
                         <!-- <input type="text" name="buscar"><input type="submit" value="Buscar"></input> -->
                     </label>
 
