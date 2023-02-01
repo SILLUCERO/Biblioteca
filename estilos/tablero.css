@@ -1,17 +1,7 @@
-a {
-  color: inherit;
-}
-
-.box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 99vw;
-
-}
 
 .tablero {
+  width: 100%;
+  /* padding: 5%; */
   display: grid;
   justify-items: center;
   grid-template-columns: repeat(1, 1fr);
@@ -103,7 +93,7 @@ a {
   justify-content: center;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 600px) {
   .tablero {
     width: 100%;
     grid-template-columns: repeat(4, 1fr);
@@ -111,15 +101,11 @@ a {
   }
 
   .caja {
-    width: 70%;
+    width: 60%;
   }
 
   .boxI {
     height: 150px;
-  }
-
-  .btnsIcons {
-    width: 30%;
   }
 
   .btnsIcons a {
@@ -129,7 +115,10 @@ a {
 
 @media only screen and (min-width: 992px) {
   .tablero {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .caja{
+    width: 55%;
   }
 
   .boxI {
@@ -140,7 +129,7 @@ a {
   .btns {
     display: flex;
     flex-direction: column;
-    width: 40%;
+    width: 100%;
   }
 
   .btnsIcons {
@@ -150,23 +139,24 @@ a {
   .btns a {
     border-radius: 10px;
     margin-bottom: 10%;
+    margin-left: 10%;
     font-size: 14px;
     padding: 5%;
-    width: 100%;
     text-align: center;
   }
 
 }
 
-@media only screen and (min-width: 1024px) {
+/* @media only screen and (min-width: 1024px) {
   .tablero {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(6, 1fr);
   }
-}
+} */
 
 @media only screen and (min-width: 1400px) {
   .tablero {
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+    padding: 0 5%;
   }
   .btns {
     width: 50%;
@@ -175,7 +165,10 @@ a {
 
 @media only screen and (min-width: 2500px) {
   .tablero {
-    grid-template-columns: repeat(7, 1fr);
+    grid-template-columns: repeat(8, 1fr);
+  }
+  .caja{
+    width: 50%;
   }
   .boxI {
     width: 150px;

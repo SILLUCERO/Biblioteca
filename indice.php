@@ -49,7 +49,12 @@ $query = mysqli_query($con1, $SQL_READ);
             while ($row = mysqli_fetch_array($query)) : ?>
                 <div class="libro">
                     <div class="titulo">
-                        <h4><?= substr($row['titulo'], 0, 23) ?> ...</h4>
+                        <h4><?=
+
+                        strlen($row['titulo']) < 20 ?  ($row['titulo']) : (substr($row['titulo'], 0, 20) . '...');
+
+
+                         ?></h4>
                     </div>
                     <div class="box1">
                         <div class="caja">

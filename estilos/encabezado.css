@@ -13,7 +13,7 @@
     justify-content: space-between;
 
     width: 100%;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
 }
 
 .logo {
@@ -23,14 +23,14 @@
 }
 
 .logo img {
-    width: 20%;
+    width: 15%;
 }
 
 .acciones_barra {
     justify-content: space-around;
     background-color: var(--c-card);
     width: 100%;
-    height: 7vh;
+    height: 15vh;
     padding: 0 2%;
 }
 
@@ -82,7 +82,7 @@
 
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 600px) {
     .header {
         margin-bottom: 5%;
     }
@@ -92,11 +92,7 @@
     }
 
     .logo img {
-        width: 20%;
-    }
-
-    .acciones_barra {
-        height: 7vh;
+        width: 15%;
     }
 }
 
@@ -115,32 +111,19 @@
     }
 
     .logo img {
-        width: 20%;
+        width: 12%;
         padding: 0 1%;
     }
 
     .acciones_barra {
-        background-color: transparent;
-        width: 80%;
-    }
-}
-
-@media only screen and (min-width: 1024px) {
-    .acciones_barra {
         width: 70%;
     }
-
-    .acciones_barra>* {
-        padding: 2% 0;
+}
+@media only screen and (min-width: 1024px) {
+    .acciones_barra > *{
+        height: 80%;
     }
-
-    @media only screen and (min-width: 1024px) {
-        .input {
-           
-            padding: 3% 10%;
-            width: 100%;
-            height: 100%;
-           
-        }
-    }
+}
+@media only screen and (min-width: 1400px) {
+   
 }
