@@ -58,3 +58,47 @@ align-items: center;
   background-color: var(--c-btn-delete);
   border: 1.5px solid var(--c-btn-delete-border);
 }
+@media only screen and (min-width: 768px){
+  .container2{
+    display: flex;
+    flex-direction: row;
+
+  }
+  .container4{
+    padding-left: 5%;
+  }
+  .container3{
+    width: 270px;
+    overflow: hidden;
+  }
+  .btnsIconsDetalle{
+    display: flex;
+    justify-content: space-evenly;
+    width: 40%;
+    margin-top: 0%;
+    margin-left: 53%;
+  }  
+
+}
+@media only screen and (min-width: 1400px){
+  .container2{
+    display: flex;
+    flex-direction: row;
+
+  }
+  .container4{
+    padding-left: 5%;
+  }
+  .container3{
+    width: 270px;
+    overflow: hidden;
+  }
+  .btnsIconsDetalle{
+    display: flex;
+    justify-content: space-evenly;
+    width: 40%;
+    margin-top: 0%;
+    margin-left: 60%;
+  }  
+
+}

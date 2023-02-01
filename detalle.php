@@ -13,8 +13,8 @@ $query = mysqli_query($con, $sql);
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" type="text/css" href="http://localhost/Biblioteca/estilos/style.css"> -->
-    <link rel="stylesheet" type="text/css" href="http://localhost:8888/Biblioteca/estilos/style.css">
+    <link rel="stylesheet" type="text/css" href="http://localhost/Biblioteca/estilos/style.css">
+    <!-- <link rel="stylesheet" type="text/css" href="http://localhost:8888/Biblioteca/estilos/style.css"> -->
     <title>Biblioteca</title>
 </head>
 
@@ -57,8 +57,8 @@ $query = mysqli_query($con, $sql);
                 </div>
 
                 <div class="btnsIconsDetalle">
-                    <a class="pencil" href="edicion-formulario.php?id=<?= $row['id'] ?>"><i class="bi bi-pencil-fill"></i></a>
-                    <a class="trash" href="./logica/borrar.php?id=<?= $row['id'] ?>" class="trash"><i class="bi bi-trash3-fill"></i></a>
+                    <a class="pencil" href="edicion-formulario.php?id=<?= $row['id'] ?>"><!-- <i class="bi bi-pencil-fill"></i> -->Editar</a>
+                    <a class="trash" href="./logica/borrar.php?id=<?= $row['id'] ?>" class="trash"><!-- <i class="bi bi-trash3-fill"></i> -->Borrar</a>
                 </div>
             </div>
         <?php endwhile; ?>
