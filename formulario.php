@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biblioteca</title>
-    <link rel="stylesheet" type="text/css" href="http://localhost/Biblioteca/estilos/style.css"> 
-    <!-- <link rel="stylesheet" type="text/css" href="http://localhost:8888/Biblioteca/estilos/style.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="http://localhost/Biblioteca/estilos/style.css"> -->
+    <link rel="stylesheet" type="text/css" href="http://localhost:8888/Biblioteca/estilos/style.css">
 </head>
 <body>
     <div class="box0">
@@ -24,7 +24,7 @@
                     <a href="./indice.php">Biblioteca</a>
                 </div>                  
                 <div class="crear_formulario"> 
-                    <a href="./formulario.php">Crear Registro</a>
+                    <a href="./formulario.php">Crear libro</a>
                 </div>
                 <div class="buscar">
                 <form class=buscar_ok action="indice.php" method="POST">

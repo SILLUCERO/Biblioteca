@@ -27,62 +27,38 @@ $query = mysqli_query($con1, $SQL_READ);
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="http://localhost/Biblioteca/estilos/style.css">
+    <!-- <link rel="stylesheet" type="text/css" href="http://localhost/Biblioteca/estilos/style.css"> -->
 
-    <!-- <link rel="stylesheet" type="text/css" href="http://localhost:8888/Biblioteca/estilos/style.css"> -->
+    <link rel="stylesheet" type="text/css" href="http://localhost:8888/Biblioteca/estilos/style.css">
 
     <title>Biblioteca</title>
 </head>
 
 <body>
     <div class="box0">
-        <header class="nav">
-            <div class="imagotipo">
-                <div class="img_isologo">
-                    <img src="./assets/img_logo.png" alt="Isologo de Smart Books">            
-                </div>
-                <div class="sb_logotipo">
-                    <h2>Smart Books</h2>
-                </div>
-            </div>
+        <header class="header">
+            <a href="./indice.php" class="logo">
+                <img src="./assets/img_logo.png" alt="Isologo de Smart Books">
+                <h1>Smart Books</h1>
+            </a>
+
             <div class=acciones_barra>
-                <div class="biblioteca">
-                    <a href="./indice.php">Biblioteca</a>
-                </div>                  
-                <div class="formulario"> 
-                    <a href="./formulario.php">Crear Registro</a>
-                </div>
-   
-                <form action="indice.php" method="POST">
-                     <input type="text" name="buscar">
-                     <input type="submit" value="Buscar">
-               </form> 
-           </div>
-
-    </header>
-
-<!-- <?php
-
-   while ($row = mysqli_fetch_array($sql_query)){ ?>
-
-     <tr>
-       <td><?= $row['id']  ?></td>
-       <td><?= $row['ISBN']  ?> </td>
-       <td><?= $row['titulo']  ?> </td>
-       <td><?= $row['autor']  ?> </td>
-     </tr>
-
-<?php } 
-?> -->
-
-
-
+                <a href="./indice.php">Biblioteca</a>
+                <a href="./formulario.php">Crear Libro</a>
+                <form action="indice.php" method="POST" class="input-wrapper">
+                    <label for="buscar">
+                        <input type="text" class="input" name="buscar" placeholder="Buscar...">
+                        <button class="bi-search"></button>
+                    </label>
+                </form>
+            </div>
+        </header>
         <main class="tablero">
             <?php
             while ($row = mysqli_fetch_array($query)) : ?>
                 <div class="libro">
                     <div class="titulo">
-                        <h4><?= substr($row['titulo'], 0, 23)?> ...</h4>
+                        <h4><?= substr($row['titulo'], 0, 23) ?> ...</h4>
                     </div>
                     <div class="box1">
                         <div class="caja">
@@ -93,7 +69,7 @@ $query = mysqli_query($con1, $SQL_READ);
                             <a class="eye" href="detalle.php?id=<?= $row['id'] ?>">Ver info.</a>
                             <a class="pencil" href="edicion-formulario.php?id=<?= $row['id'] ?>">Editar</a>
                             <a class="trash" href="./logica/borrar.php?id=<?= $row['id'] ?>">Borrar</a>
-                       </div> 
+                        </div>
 
                         <div class="btnsIcons">
                             <a class="eye" href="detalle.php?id=<?= $row['id'] ?>"><i class="bi bi-eye-fill"></i></a>

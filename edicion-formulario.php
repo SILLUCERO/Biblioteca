@@ -32,21 +32,12 @@ $row = mysqli_fetch_array($query);
 
 <body>
     <div class='box0'>
-    <header class="nav">
-            <div class="imagotipo">
-                <div class="img_isologo">
-                    <img src="./assets/img_logo.png" alt="Isologo de Smart Books">            
-                </div>
-                <div class="sb_logotipo">
-                    <h2>Smart Books</h2>
-                </div>
-            </div>
-            <div class=acciones_barra>
+    <div class=acciones_barra>
                 <div class="biblioteca">
                     <a href="./indice.php">Biblioteca</a>
                 </div>                  
                 <div class="crear_formulario"> 
-                    <a href="./formulario.php">Crear Registro</a>
+                    <a href="./formulario.php">Crear libro</a>
                 </div>
                 <div class="buscar">
                 <form class=buscar_ok action="indice.php" method="POST">
