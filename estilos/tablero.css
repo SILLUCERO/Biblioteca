@@ -23,6 +23,7 @@
   align-items: center;
   padding: 2% 5%;
   height: 45px;
+  cursor:default;
 }
 
 .box1 {
@@ -33,6 +34,10 @@
 .caja {
   display: flex;
   width: 70%;
+  transition: 0.3s;
+}
+.caja:hover{
+transform: scale(1.1);
 }
 
 .boxI {
@@ -74,6 +79,9 @@
 .btns .eye {
   background-color: var(--c-btn-view);
   border: 1.5px solid var(--c-btn-view-border);
+} 
+.eye:hover{
+  background-color: var(--c-btn-view-border);
 }
 
 .btnsIcons .pencil,
@@ -81,11 +89,17 @@
   background-color: var(--c-btn-edit);
   border: 1.5px solid var(--c-btn-edit-border);
 }
+.pencil:hover{
+  background-color: var(--c-btn-edit-border)
+}
 
 .btnsIcons .trash,
 .btns .trash {
   background-color: var(--c-btn-delete);
   border: 1.5px solid var(--c-btn-delete-border);
+}
+.trash:hover{
+  background-color: var(--c-btn-delete-border)
 }
 
 .btnsIcons i {
@@ -168,10 +182,10 @@
     grid-template-columns: repeat(8, 1fr);
   }
   .caja{
-    width: 50%;
+    width: 70%;
   }
   .boxI {
-    width: 150px;
-    height: 200px;
+    width: 170px;
+    height: 190px;
   }
 }

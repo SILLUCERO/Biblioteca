@@ -28,7 +28,7 @@ $row = mysqli_fetch_array($query);
 
 <body>
     <div class='box0'>
-    <header class="header">
+        <header class="header">
             <a href="./indice.php" class="logo">
                 <img src="./assets/img_logo.png" alt="Isologo de Smart Books">
                 <h1>Smart Books</h1>
@@ -45,20 +45,32 @@ $row = mysqli_fetch_array($query);
                 </form>
             </div>
         </header>
-        <div>
-            <form class="formLibros" action="./logica/actualizar.php" method="POST">
-                <input class="boxDatos" type="hidden" name="id" value="<?= $row['id'] ?>">
+        <h2 class="tipoForm">Editar Datos</h2>
+        <form class="formLibros" action="./logica/actualizar.php" method="POST">
+            <input class="boxDatos" type="hidden" name="id" value="<?= $row['id'] ?>">
+            <label for="isbn">ISBN:
                 <input class="boxDatos" type="text" name="isbn" placeholder="ISBN" value="<?= $row['ISBN'] ?>">
+            </label>
+
+            <label for="titulo">Titulo:
                 <input class="boxDatos" type="text" name="titulo" placeholder="Título" value="<?= $row['titulo'] ?>">
+            </label>
+            <label for="autor">Autor o Autores:
                 <input class="boxDatos" type="text" name="autor" placeholder="Autor" value="<?= $row['autor'] ?>">
+            </label>
+
+            <label for="descripcion">Descripcion:
                 <input class="boxDatos" type="text" name="descripcion" placeholder="Descripción" value="<?= $row['descripcion'] ?>">
+            </label>
+
+            <label for="portada">URL portada:
                 <input class="boxDatos" type="text" name="portada" placeholder="Portada" value="<?= $row['portada'] ?>">
-                
-                <input class="btnConfirmar" type="submit" value="Confirmar">
-            </form>
-        </div>
+            </label>
+
+
+            <input class="btnConfirmar" type="submit" value="Confirmar">
+        </form>
     </div>
-        
 </body>
 
 </html>
