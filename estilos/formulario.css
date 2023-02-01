@@ -44,24 +44,12 @@
 
 @media (min-width: 768px) {
   .formLibros {
-    width: 45vw;
+    width: 30vw;
 }  
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1400px) {
   .formLibros {
     width: 40vw;
 }  
 }
-
-@media (min-width: 1024px) {
-  .formLibros {
-    width: 33vw;
-}  
-}
-
-/* @media (min-width: 1024px) {
-  .formLibros {
-    width: 50vw;
-}  
-} */
