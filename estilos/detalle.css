@@ -45,8 +45,7 @@ align-items: center;
 }
 .btnsIconsDetalle a{
   color: var(--c-text);
-  margin-bottom: 10%;
-  padding: 10%;
+  padding: 5% 0;
   width: 40%;
   border-radius: 10px;
   text-align: center;
