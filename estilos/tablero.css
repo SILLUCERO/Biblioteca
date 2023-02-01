@@ -1,7 +1,7 @@
 
 .tablero {
   width: 100%;
-  /* padding: 5%; */
+  padding: 5%;
   display: grid;
   justify-items: center;
   grid-template-columns: repeat(1, 1fr);
@@ -116,6 +116,7 @@
 @media only screen and (min-width: 992px) {
   .tablero {
     grid-template-columns: repeat(5, 1fr);
+    padding: 1%;
   }
   .caja{
     width: 55%;
@@ -156,13 +157,12 @@
 @media only screen and (min-width: 1400px) {
   .tablero {
     grid-template-columns: repeat(6, 1fr);
-    padding: 0 5%;
+    padding: 4%;
   }
   .btns {
     width: 50%;
   }
 }
-
 @media only screen and (min-width: 2500px) {
   .tablero {
     grid-template-columns: repeat(8, 1fr);
