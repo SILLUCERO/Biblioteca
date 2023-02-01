@@ -1,5 +1,3 @@
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
-
 .ventana{
   background-color: var(--c-card);
   display: flex;
@@ -60,20 +58,3 @@ align-items: center;
   background-color: var(--c-btn-delete);
   border: 1.5px solid var(--c-btn-delete-border);
 }
-/* .btnIcons a{
-  color: var(--c-text);
-  border-radius: 10px;
-  margin-right: 50%;
-}
-.btnIcons .editar{
-
-  background-color: var(--c-btn-edit);
-  
-}
-.btnIcons .borrar{
-  background-color: var(--c-btn-delete);
-  border: none;
-  color: var(--c-text);
-
-}
- */

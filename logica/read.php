@@ -1,6 +1,5 @@
 <?php
-
- include ('./logica/conexion.php');
+include ('./logica/conexion.php');
 $con1= conectar();
 
 if(!isset($_POST['buscar'])){

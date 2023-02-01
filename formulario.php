@@ -10,28 +10,21 @@
 </head>
 <body>
     <div class="box0">
-    <header class="nav">
-            <div class="imagotipo">
-                <div class="img_isologo">
-                    <img src="./assets/img_logo.png" alt="Isologo de Smart Books">            
-                </div>
-                <div class="sb_logotipo">
-                    <h2>Smart Books</h2>
-                </div>
-            </div>
+    <header class="header">
+            <a href="./indice.php" class="logo">
+                <img src="./assets/img_logo.png" alt="Isologo de Smart Books">
+                <h1>Smart Books</h1>
+            </a>
+
             <div class=acciones_barra>
-                <div class="biblioteca">
-                    <a href="./indice.php">Biblioteca</a>
-                </div>                  
-                <div class="crear_formulario"> 
-                    <a href="./formulario.php">Crear libro</a>
-                </div>
-                <div class="buscar">
-                <form class=buscar_ok action="indice.php" method="POST">
-                    <input type="text" id="palabras_clave" name="keywords" size="30" maxlength="30" value="Buscar...">
-                    <input type="submit" name="buscar" id="search" value="OK">
+                <a href="./indice.php">Biblioteca</a>
+                <a href="./formulario.php">Crear Libro</a>
+                <form action="indice.php" method="POST" class="input-wrapper">
+                    <label for="buscar">
+                        <input type="text" class="input" name="buscar" placeholder="Buscar...">
+                        <button class="bi-search"></button>
+                    </label>
                 </form>
-                </div>
             </div>
         </header>
         <div>
