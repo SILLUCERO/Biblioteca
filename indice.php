@@ -51,7 +51,7 @@ $query = mysqli_query($con1, $SQL_READ);
                     <div class="titulo">
                         <h4><?=
 
-                        strlen($row['titulo']) < 20 ?  ($row['titulo']) : (substr($row['titulo'], 0, 20) . '...');
+                        strlen($row['titulo']) < 19 ?  ($row['titulo']) : (substr($row['titulo'], 0, 19) . '...');
 
 
                          ?></h4>

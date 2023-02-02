@@ -144,13 +144,14 @@ transform: scale(1.1);
   }
 
   .btns {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 100%; */
+    display: none;
   }
 
   .btnsIcons {
-    display: none;
+    /* display: none; */
   }
 
   .btns a {
