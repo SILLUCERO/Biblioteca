@@ -19,7 +19,7 @@
 }
 
 .titulo {
-  background-color: var(--c-gap);
+  background-color: var(--c-background);
   display: flex;
   align-items: center;
   padding: 2% 5%;

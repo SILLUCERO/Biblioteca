@@ -2,7 +2,7 @@
 .formLibros {
   display: flex;
   flex-direction: column;
-  background-color: var(--c-card);
+  background-color: var(--c-gap);
   padding: 8%;
   /* margin-top: 5%; */
   width: 80vw;
