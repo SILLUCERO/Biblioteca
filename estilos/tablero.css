@@ -152,6 +152,7 @@ transform: scale(1.1);
 
   .btnsIcons {
     /* display: none; */
+    width: 20%;
   }
 
   .btns a {
