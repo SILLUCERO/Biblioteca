@@ -37,7 +37,8 @@ $query = mysqli_query($con, $sql);
                 </form>
             </div>
         </header>
-
+        <?php
+        while ($row = mysqli_fetch_array($query)) : ?>
         <div class="ventana">
             <div class="container2">
                 <div class="container3">
@@ -60,7 +61,7 @@ $query = mysqli_query($con, $sql);
                 <a class="trash" href="./logica/borrar.php?id=<?= $row['id'] ?>" class="trash"><i class="bi bi-trash3-fill"></i></a>
             </div>
         </div>
-
+        <?php endwhile; ?>
     </div>
 </body>
 
