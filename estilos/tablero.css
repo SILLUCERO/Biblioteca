@@ -1,6 +1,7 @@
 
 .tablero {
   width: 100%;
+  background-color: var(--c-background);
   padding: 5%;
   display: grid;
   justify-items: center;
@@ -18,7 +19,7 @@
 }
 
 .titulo {
-  background-color: var(--c-gap);
+  background-color: var(--c-background);
   display: flex;
   align-items: center;
   padding: 2% 5%;
@@ -110,7 +111,7 @@ transform: scale(1.1);
 @media only screen and (min-width: 600px) {
   .tablero {
     width: 100%;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem 0rem;
   }
 
@@ -119,7 +120,8 @@ transform: scale(1.1);
   }
 
   .boxI {
-    height: 140px;
+    height: 135px;
+    width: 100px;
   }
 
   .btnsIcons a {
@@ -129,26 +131,24 @@ transform: scale(1.1);
 
 @media only screen and (min-width: 992px) {
   .tablero {
-    grid-template-columns: repeat(5, 1fr);
     padding: 1%;
+    grid-template-columns: repeat(4, 1fr);
   }
   .caja{
-    width: 55%;
+    width: 70%;
   }
 
   .boxI {
-    width: 100px;
-    height: 150px;
+    width: 120px;
+    height: 170px;
   }
 
   .btns {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+    display: none;
   }
 
   .btnsIcons {
-    display: none;
+    width: 40%;
   }
 
   .btns a {
@@ -162,15 +162,8 @@ transform: scale(1.1);
 
 }
 
-/* @media only screen and (min-width: 1024px) {
-  .tablero {
-    grid-template-columns: repeat(6, 1fr);
-  }
-} */
-
 @media only screen and (min-width: 1400px) {
   .tablero {
-    grid-template-columns: repeat(6, 1fr);
     padding: 4%;
   }
   .btns {
