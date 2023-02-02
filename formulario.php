@@ -52,5 +52,4 @@
         </form>
     </div>
 </body>
-<script src="./alertas.js"></script>
 </html>

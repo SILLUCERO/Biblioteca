@@ -25,6 +25,7 @@ $query = mysqli_query($con, $sql);
                 <img src="./assets/img_logo.png" alt="Isologo de Smart Books">
                 <h1>Smart Books</h1>
             </a>
+
             <div class=acciones_barra>
                 <a href="./indice.php">Biblioteca</a>
                 <a href="./formulario.php">Crear Libro</a>
