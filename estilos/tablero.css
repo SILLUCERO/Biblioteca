@@ -141,19 +141,13 @@ transform: scale(1.1);
   .boxI {
     width: 120px;
     height: 170px;
-    /* display: flex;
-    justify-content: space-between; */
   }
 
   .btns {
-    /* display: flex;
-    flex-direction: column;
-    width: 100%; */
     display: none;
   }
 
   .btnsIcons {
-    /* display: none; */
     width: 40%;
   }
 
