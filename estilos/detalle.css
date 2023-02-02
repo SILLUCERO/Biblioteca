@@ -2,7 +2,7 @@
   background-color: var(--c-card);
   display: flex;
   flex-direction: column;
-  padding: 6%;
+  padding: 4%;
   width:80% ;
   margin-top: 5%;
 }
@@ -31,7 +31,7 @@ align-items: center;
 }
 .container5, .container6{
   background-color: var(--c-gap);
-  padding: 10%;
+  padding: 4%;
   width: 100%;
   border-radius: 10px;
   margin-bottom: 5%; 

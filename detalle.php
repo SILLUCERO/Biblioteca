@@ -48,9 +48,9 @@ $query = mysqli_query($con, $sql);
                     <div class="container5">
                         <h3><?= $row['titulo'] ?></h3>
                         <p><?= $row['autor'] ?></p>
+                        <strong><?= $row['ISBN'] ?></strong>
                     </div>
                     <div class='container6'>
-                        <p><strong><?= $row['ISBN'] ?></strong></p>
                         <p><?= $row['descripcion'] ?></p>
                     </div>
                 </main>
