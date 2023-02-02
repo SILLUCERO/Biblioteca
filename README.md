@@ -11,12 +11,17 @@ We design and create a library web program to be displayed on the first page. Wh
    ​
 ## :iphone:Mobile Graphic reference
 ​
-<img width="959" alt="Mobile" src="https://user-images.githubusercontent.com/113552534/215080259-93224ac6-e0de-424a-975c-3436359ddbb5.png">
-​
+![Image text](./assets/img%20readme/Captura%205.PNG)
+​![Image text](./assets/img%20readme/Captura%206.PNG)
+![Image text](./assets/img%20readme/Captura%207.PNG)
+![Image text](./assets/img%20readme/Captura%208.PNG)
 
 ## :desktop_computer:Desktop Graphic reference
 ​
-<img width="959" alt="Desktop" src="https://user-images.githubusercontent.com/113552534/215080324-5860fadb-deeb-45cb-b7d3-45f5e05c2b82.png">
+![Image text](./assets/img%20readme/Captura%201.PNG)
+![Image text](./assets/img%20readme/Captura%202.PNG)
+![Image text](./assets/img%20readme/Captura%203.PNG)
+![Image text](./assets/img%20readme/Captura%204.PNG)
 
 
 ## :hammer_and_wrench:Tools 
