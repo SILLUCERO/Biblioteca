@@ -1,7 +1,7 @@
 
 .tablero {
   width: 100%;
-  /* padding: 5%; */
+  padding: 5%;
   display: grid;
   justify-items: center;
   grid-template-columns: repeat(1, 1fr);
@@ -23,6 +23,7 @@
   align-items: center;
   padding: 2% 5%;
   height: 45px;
+  cursor:default;
 }
 
 .box1 {
@@ -33,6 +34,10 @@
 .caja {
   display: flex;
   width: 70%;
+  transition: 0.3s;
+}
+.caja:hover{
+transform: scale(1.1);
 }
 
 .boxI {
@@ -74,6 +79,9 @@
 .btns .eye {
   background-color: var(--c-btn-view);
   border: 1.5px solid var(--c-btn-view-border);
+} 
+.eye:hover{
+  background-color: var(--c-btn-view-border);
 }
 
 .btnsIcons .pencil,
@@ -81,11 +89,17 @@
   background-color: var(--c-btn-edit);
   border: 1.5px solid var(--c-btn-edit-border);
 }
+.pencil:hover{
+  background-color: var(--c-btn-edit-border)
+}
 
 .btnsIcons .trash,
 .btns .trash {
   background-color: var(--c-btn-delete);
   border: 1.5px solid var(--c-btn-delete-border);
+}
+.trash:hover{
+  background-color: var(--c-btn-delete-border)
 }
 
 .btnsIcons i {
@@ -101,11 +115,11 @@
   }
 
   .caja {
-    width: 60%;
+    width: 70%;
   }
 
   .boxI {
-    height: 150px;
+    height: 140px;
   }
 
   .btnsIcons a {
@@ -116,6 +130,7 @@
 @media only screen and (min-width: 992px) {
   .tablero {
     grid-template-columns: repeat(5, 1fr);
+    padding: 1%;
   }
   .caja{
     width: 55%;
@@ -156,22 +171,21 @@
 @media only screen and (min-width: 1400px) {
   .tablero {
     grid-template-columns: repeat(6, 1fr);
-    padding: 0 5%;
+    padding: 4%;
   }
   .btns {
     width: 50%;
   }
 }
-
 @media only screen and (min-width: 2500px) {
   .tablero {
     grid-template-columns: repeat(8, 1fr);
   }
   .caja{
-    width: 50%;
+    width: 70%;
   }
   .boxI {
-    width: 150px;
-    height: 200px;
+    width: 170px;
+    height: 190px;
   }
 }

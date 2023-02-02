@@ -1,55 +1,82 @@
 
 .formLibros {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 50vw;
-    background-color: var(--c-card);
-    border-radius: 10px;
-    padding: 8%;
-    margin: 4% 0;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--c-card);
+  padding: 8%;
+  /* margin-top: 5%; */
+  width: 80vw;
+  border-radius: 10px;
+}
+.formLibros>*{
+  font-size: large;
+}
+.tipoForm{
+  padding: 5% 0;
+  font-size: xx-large;
 }
 
 .boxDatos {
   width: 100%;
   border: none;
   background-color: var(--c-gap);
-  color: var(--c-text-fill);
   border-radius: 10px;
-  padding: 5% 2%;
+  padding: 5%;
   margin: 4% 0;
 }
-
-.btnCrear {
-  border: none;
-  background-color: var(--c-btn-view);
-  color: var(--c-text);
-  border-radius: 10px;
-  width: 30%;
-  padding: 5% 2%;
-  margin: 10% 0;
-  align-self:flex-end;
+.boxDatos:hover{
+  /* border: 1px solid var( --c-text); */
+  background-color: var( --c-background);
 }
 
-.btnConfirmar {
+.btnCrear, .btnConfirmar {
   border: none;
-  background-color: var(--c-btn-edit);
-  color: var(--c-text);
+
   border-radius: 10px;
-  width: 30%;
-  padding: 5% 2%;
+  width: 40%;
+  padding: 5%;
   margin: 10% 0;
   align-self:flex-end;
+  font-size: large;
+}
+.btnCrear{
+  background-color: var(--c-btn-view);
+  border: 2px solid var(--c-btn-view-border);
+}
+.btnCrear:hover{
+  background-color: var( --c-btn-view-border);
+}
+
+.btnConfirmar{
+  background-color: var(--c-btn-edit);
+  border: 2px solid var(--c-btn-edit-border);
+}
+.btnConfirmar:hover{
+  background-color: var( --c-btn-edit-border);
 }
 
 @media (min-width: 768px) {
   .formLibros {
-    width: 30vw;
-}  
+    width: 60vw;
+}
+.tipoForm{
+  padding: 3% 0;
+}
+ 
 }
 
 @media (min-width: 1400px) {
   .formLibros {
     width: 40vw;
+    padding: 2% 8%;
 }  
+.btnCrear{
+  margin-bottom: 0;
+}
+.btnConfirmar{
+  margin: 5% 0;
+}
+.tipoForm{
+  padding: 2% 0;
+}
 }

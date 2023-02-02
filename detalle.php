@@ -20,7 +20,7 @@ $query = mysqli_query($con, $sql);
 
 <body>
     <div class="box0">
-    <header class="header">
+        <header class="header">
             <a href="./indice.php" class="logo">
                 <img src="./assets/img_logo.png" alt="Isologo de Smart Books">
                 <h1>Smart Books</h1>
@@ -37,31 +37,30 @@ $query = mysqli_query($con, $sql);
                 </form>
             </div>
         </header>
-        <?php
-        while ($row = mysqli_fetch_array($query)) : ?>
-            <div class="ventana">
-                <div class="container2">
-                    <div class="container3">
-                        <img class="portada" src=<?= $row['portada'] ?>>
-                    </div>
-                    <main class="container4">
-                        <div class="container5">
-                            <h3><?= $row['titulo'] ?></h3>
-                            <p><?= $row['autor'] ?></p>
-                        </div>
-                        <div class='container6'>
-                            <p><strong><?= $row['ISBN'] ?></strong></p>
-                            <p><?= $row['descripcion'] ?></p>
-                        </div>
-                    </main>
-                </div>
 
-                <div class="btnsIconsDetalle">
-                    <a class="pencil" href="edicion-formulario.php?id=<?= $row['id'] ?>"><!-- <i class="bi bi-pencil-fill"></i> -->Editar</a>
-                    <a class="trash" href="./logica/borrar.php?id=<?= $row['id'] ?>" class="trash"><!-- <i class="bi bi-trash3-fill"></i> -->Borrar</a>
+        <div class="ventana">
+            <div class="container2">
+                <div class="container3">
+                    <img class="portada" src=<?= $row['portada'] ?>>
                 </div>
+                <main class="container4">
+                    <div class="container5">
+                        <h3><?= $row['titulo'] ?></h3>
+                        <p><?= $row['autor'] ?></p>
+                    </div>
+                    <div class='container6'>
+                        <p><strong><?= $row['ISBN'] ?></strong></p>
+                        <p><?= $row['descripcion'] ?></p>
+                    </div>
+                </main>
             </div>
-        <?php endwhile; ?>
+
+            <div class="btnsIconsDetalle">
+                <a class="pencil" href="edicion-formulario.php?id=<?= $row['id'] ?>"><i class="bi bi-pencil-fill"></i></a>
+                <a class="trash" href="./logica/borrar.php?id=<?= $row['id'] ?>" class="trash"><i class="bi bi-trash3-fill"></i></a>
+            </div>
+        </div>
+
     </div>
 </body>
 

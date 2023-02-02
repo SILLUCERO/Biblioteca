@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,9 +9,10 @@
     <!-- <link rel="stylesheet" type="text/css" href="http://localhost/Biblioteca/estilos/style.css"> -->
     <link rel="stylesheet" type="text/css" href="http://localhost:8888/Biblioteca/estilos/style.css">
 </head>
+
 <body>
     <div class="box0">
-    <header class="header">
+        <header class="header">
             <a href="./indice.php" class="logo">
                 <img src="./assets/img_logo.png" alt="Isologo de Smart Books">
                 <h1>Smart Books</h1>
@@ -27,17 +29,27 @@
                 </form>
             </div>
         </header>
-        <div>
-            <form class="formLibros" action="./logica/crear.php" method="POST">
-                <input class="boxDatos" type="text" name="isbn" placeholder="ISBN">
-                <input class="boxDatos" type="text" name="titulo" placeholder="Título">
-                <input class="boxDatos" type="text" name="autor" placeholder="Autor">
-                <input class="boxDatos" type="text" name="descripcion" placeholder="Descripción">
-                <input class="boxDatos" type="text" name="portada" placeholder="Portada">
-                
-                <input class='btnCrear' type="submit" value="Crear">
-            </form>
-        </div>
+        <h2 class="tipoForm">Crear Registro</h2>
+        <form class="formLibros" action="./logica/crear.php" method="POST">
+            <label for="isbn">ISBN:
+                <input id="isbn" class="boxDatos" type="text" name="isbn" placeholder="987-XXXXXXXXX">
+            </label>
+            <label for="titulo">Titulo:
+                <input class="boxDatos" type="text" name="titulo" placeholder="">
+            </label>
+            <label for="autor">Autor o Autores:
+                <input class="boxDatos" type="text" name="autor" placeholder="">
+            </label>
+            <label for="descripcion">Descripcion:
+                <input class="boxDatos" type="text" name="descripcion" placeholder="Descripcion breve...">
+            </label>
+            <label for="portada">URL portada:
+                <input class="boxDatos" type="text" name="portada" placeholder="../archivo/imagen">
+            </label>
+
+            <input class='btnCrear' type="submit" value="Crear">
+        </form>
     </div>
-    </body>
+</body>
+
 </html>
