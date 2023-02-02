@@ -25,8 +25,7 @@
   margin: 4% 0;
 }
 .boxDatos:hover{
-  /* border: 1px solid var( --c-text); */
-  background-color: var( --c-gap);
+  background-color: var( --c-card);
 }
 
 .btnCrear, .btnConfirmar {
