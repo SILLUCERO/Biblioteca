@@ -131,6 +131,7 @@ transform: scale(1.1);
 @media only screen and (min-width: 992px) {
   .tablero {
     padding: 1%;
+    grid-template-columns: repeat(4, 1fr);
   }
   .caja{
     width: 55%;
