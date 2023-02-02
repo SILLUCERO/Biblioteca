@@ -58,11 +58,12 @@ $query = mysqli_query($con, $sql);
 
             <div class="btnsIconsDetalle">
                 <a class="pencil" href="edicion-formulario.php?id=<?= $row['id'] ?>"><i class="bi bi-pencil-fill"></i></a>
-                <a class="trash" href="./logica/borrar.php?id=<?= $row['id'] ?>" class="trash"><i class="bi bi-trash3-fill"></i></a>
+                <a onclick="alerta('Eliminado con exito!')" class="trash" href="./logica/borrar.php?id=<?= $row['id'] ?>" class="trash"><i class="bi bi-trash3-fill"></i></a>
             </div>
         </div>
         <?php endwhile; ?>
     </div>
+    <script src="./alertas.js"></script>
 </body>
 
 </html>

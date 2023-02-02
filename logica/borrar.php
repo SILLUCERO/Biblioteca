@@ -1,14 +1,15 @@
 <?php
 
 include("conexion.php");
-$con=conectar();
+$con = conectar();
 
-$datos_id=$_GET['id'];
+$datos_id = $_GET['id'];
 
-$sql="DELETE FROM libros  WHERE id='$datos_id'";
-$query=mysqli_query($con,$sql);
+$sql = "DELETE FROM libros  WHERE id='$datos_id'";
+$query = mysqli_query($con, $sql);
 
-    if($query){
-       Header("Location: ../indice.php");
-    }
-?>
+if ($query) {
+    Header("Location: ../indice.php");
+} else {
+    echo "error!!";
+}

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,7 +9,6 @@
     <title>Biblioteca</title>
     <!-- <link rel="stylesheet" type="text/css" href="http://localhost/Biblioteca/estilos/style.css"> -->
     <link rel="stylesheet" type="text/css" href="http://localhost:8888/Biblioteca/estilos/style.css">
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 </head>
 
 <body>
@@ -48,8 +48,9 @@
                 <input class="boxDatos" type="text" name="portada" placeholder="../archivo/imagen">
             </label>
 
-            <input class='btnCrear' onClick="crear()" type="submit" value="Crear">
+            <button onclick="alerta('Se ha creado con exito!')" class='btnCrear' type="submit">Crear</button>
         </form>
     </div>
+    <script src="./alertas.js"></script>
 </body>
 </html>

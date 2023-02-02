@@ -1,5 +1,9 @@
 <?php
 
+function alerta($msj){
+    echo "<script>alert('$msj');</script>";
+}
+
 include("conexion.php");
 $con = conectar();
 
@@ -14,6 +18,7 @@ VALUES (NULL, '$isbn', '$titulo', '$autor', '$descripcion', '$portada')";
 $query = mysqli_query($con, $sql);
 
 if ($query) {
+    alerta("hECHO!");
     Header("Location: ../indice.php");
    
 } else {

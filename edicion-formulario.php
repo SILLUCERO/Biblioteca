@@ -68,9 +68,10 @@ $row = mysqli_fetch_array($query);
             </label>
 
 
-            <input class="btnConfirmar" type="submit" value="Confirmar">
+            <button onclick="alerta('Los datos han sido modificados')" class="btnConfirmar" type="submit">Confirmar</button>
         </form>
     </div>
+    <script src="./alertas.js"></script>
 </body>
 
 </html>

@@ -17,5 +17,6 @@ $query=mysqli_query($con,$sql);
 
     if($query){
        Header("Location: ../indice.php");
+    } else {
+        echo "error!!";
     }
-?>
