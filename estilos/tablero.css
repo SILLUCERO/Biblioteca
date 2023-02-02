@@ -1,6 +1,7 @@
 
 .tablero {
   width: 100%;
+  background-color: var(--c-background);
   padding: 5%;
   display: grid;
   justify-items: center;

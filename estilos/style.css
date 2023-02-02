@@ -13,10 +13,11 @@
 
 
 :root {
-  --c-background: #ffffffd6;
+  --c-background: #f5f5f5;
   --c-window: #B6BBD6;
   --c-gap: #ECECEC;
-  --c-card: #D9D9D9;
+  --c-card: #ffffff;
+  --c-header:#d9d9d9;
 
   --c-btn-view-border: #83D77B;
   --c-btn-view: rgb(131, 215, 123, 0.6);
