@@ -11,10 +11,10 @@ We design and create a library web program to be displayed on the first page. Wh
    ​
 ## :iphone:Mobile Graphic reference
 ​
-![Image text](./assets/img%20readme/Captura%205.PNG)
-​![Image text](./assets/img%20readme/Captura%206.PNG)
-![Image text](./assets/img%20readme/Captura%207.PNG)
-![Image text](./assets/img%20readme/Captura%208.PNG)
+![Image text](./assets/img/img_redme/Captura%205.PNG)
+​![Image text](./assets/img/img_redme/Captura%206.PNG)
+![Image text](./assets/img/img_redme/Captura%207.PNG)
+![Image text](./assets/img/img_redme/Captura%208.PNG)
 
 ## :desktop_computer:Desktop Graphic reference
 ​
