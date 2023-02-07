@@ -1,18 +1,19 @@
 <?php
 
-class MemberController
+class BookController
 {
     public $model;
 
     public function __construct()
     {
-        require_once("/Applications/MAMP/htdocs/MVC_EXERCISE/model/MemberModel.php");
-        $this->model = new MemberModel();
+        require_once("/Applications/MAMP/htdocs/Biblioteca2/model/BookModel.php");
+        //require_once("C:/xampp/htdocs/Biblioteca2/model/BookModel.php");
+        $this->model = new BookModel();
     }
-    //pregunta al modelo si ya ha obtenido los datos de la db
-    public function getMembers()
+    
+    public function getBooks()
     {
-        return ($this->model->getMembers() ? $this->model->getMembers() : "there is no members");
+        return ($this->model->getBooks() ? $this->model->getBooks() : "there is no Books");
 
     }
 }
