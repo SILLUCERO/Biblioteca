@@ -6,7 +6,7 @@ class Database{
     private $username = "root";
     // // private $password = "root";
     private $password = "root";
-    private $db="Biblioteca";
+    private $db="biblioteca";
 
     public function connection()
     {
