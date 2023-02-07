@@ -7,7 +7,7 @@ class BookModel
     public function __construct()
     {
         require_once("/Applications/MAMP/htdocs/Biblioteca2/config/Database.php");
-        //require_once("C:/xampp/htdocs/Biblioteca2/config/Database.php");
+        //require_once("/xampp/htdocs/Biblioteca2/config/Database.php");
         $db = new Database();
         $this->conn = $db->connection();
     }
