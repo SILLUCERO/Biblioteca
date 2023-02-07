@@ -21,7 +21,7 @@ $result = $controller->getBooks();
     <div class="box0">
         <header class="header">
             <a href="./indice.php" class="logo">
-                <img src="./assets/img_logo.png" alt="Isologo de Smart Books">
+                <img src="../assets/img_logo.png" alt="Isologo de Smart Books">
                 <h1>Smart Books</h1>
             </a>
 
