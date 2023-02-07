@@ -1,11 +1,11 @@
 <?php
 
-class MemberController
+class BookController
 {
     public $model;
-
     public function __construct()
     {
+        require_once("");
         require_once("/Applications/MAMP/htdocs/MVC_EXERCISE/model/MemberModel.php");
         $this->model = new MemberModel();
     }
