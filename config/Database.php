@@ -5,10 +5,10 @@ class Database{
     private $servername = "localhost";
     private $username = "root";
     // // private $password = "root";
-    private $password = "";
-    private $bd="biblioteca";
+    private $password = "root";
+    private $db="Biblioteca";
 
-    public function connection ()
+    public function connection()
     {
         try {
             $conn = new mysqli ($this->servername, $this->username, $this->password, $this->db);
