@@ -17,15 +17,9 @@ class BookModel
         $query = $this->conn->query('SELECT * FROM libros');
         return $query->fetch_all(MYSQLI_ASSOC);
     }
-    public function createBooks()
+    public function create($table,$data)
     {
-    $isbn = $_POST['isbn'];
-    $titulo = $_POST['titulo'];
-    $autor = $_POST['autor'];
-    $descripcion = $_POST['descripcion'];
-    $portada = $_POST['portada'];
-        $query = $this->conn->query("INSERT INTO".$this->table." (`id`, `ISBN`, `titulo`, `autor`, `descripcion`, `portada`) 
-        VALUES (NULL, '$isbn', '$titulo', '$autor', '$descripcion', '$portada')");
+        $query = $this->conn->query("INSERT INTO $table VALUES (NULL,$data)");
         return $query->fetch_all(MYSQLI_ASSOC);
     }
 }
