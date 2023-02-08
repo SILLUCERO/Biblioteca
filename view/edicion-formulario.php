@@ -1,17 +1,4 @@
-<?php
 
-include('./logica/conexion.php');
-$con = conectar();
-
-
-$id = $_GET['id'];
-
-$sql = "SELECT * FROM libros WHERE id = '$id'";
-
-$query = mysqli_query($con, $sql);
-$row = mysqli_fetch_array($query);
-
-?>
 
 
 <!DOCTYPE html>
@@ -23,14 +10,14 @@ $row = mysqli_fetch_array($query);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <!-- <link rel="stylesheet" type="text/css" href="http://localhost/Biblioteca/estilos/style.css"> -->
-    <link rel="stylesheet" type="text/css" href="http://localhost:8888/Biblioteca/estilos/style.css">
+    <link rel="stylesheet" type="text/css" href="../estilos/style.css">
 </head>
 
 <body>
     <div class='box0'>
         <header class="header">
             <a href="./indice.php" class="logo">
-                <img src="./assets/img_logo.png" alt="Isologo de Smart Books">
+                <img src="../assets/img_logo.png" alt="Isologo de Smart Books">
                 <h1>Smart Books</h1>
             </a>
 
@@ -46,7 +33,7 @@ $row = mysqli_fetch_array($query);
             </div>
         </header>
         <h2 class="tipoForm">Editar Datos</h2>
-        <form class="formLibros" action="./logica/actualizar.php" method="POST">
+        <form class="formLibros" action="./store.php" method="POST">
             <input class="boxDatos" type="hidden" name="id" value="<?= $row['id'] ?>">
             <label for="isbn">ISBN:
                 <input class="boxDatos" type="text" name="isbn" placeholder="ISBN" value="<?= $row['ISBN'] ?>">

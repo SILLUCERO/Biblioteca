@@ -59,7 +59,7 @@ $result = $controller->getBooks();
 
                             <div class="btnsIcons">
                                 <a class="eye" href="detalle.php?id=<?= $book['id'] ?>"><i class="bi bi-eye-fill"></i></a>
-                                <a class="pencil" href="edicion-formulario.php?id=<?= $book['id'] ?>"><i class="bi bi-pencil-fill"></i></a>
+                                <a class="pencil" href="./edicion-formulario.php?id=<?=$book['id'] ?>"><i class="bi bi-pencil-fill"></i></a>
                                 <a onclick="alerta('Se ha eliminado con exito!')" class="trash" href="./logica/borrar.php?id=<?= $row['id'] ?>" class="trash"><i class="bi bi-trash3-fill"></i></a>
                             </div>
                         </div>
