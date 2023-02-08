@@ -20,11 +20,22 @@ class BookController
         $book = $this->model->createBook($isbn, $titulo, $autor, $descripcion, $portada);
         return ($book) ? header("Location:index.php") : header("Location:formulario.php") ;
     }
-    public function updateBooks($id,$isbn, $titulo, $autor, $descripcion, $portada)
+
+    public function getById($id){
+        $bookById = $this->model->getById($id);
+        return $bookById;
+    }
+
+    public function updateBook($id, $isbn, $titulo, $autor, $descripcion, $portada)
     {
-        $updateBook = $this->model->updateBooks($id, $isbn, $titulo, $autor, $descripcion, $portada);
+        $updateBook = $this->model->updateBook($id, $isbn, $titulo, $autor, $descripcion, $portada);
         return ($updateBook) ? header("Location:index.php") : header("Location:../view/edicion-formulario.php");
 
+    }
+
+    public function delete($id){
+        $bookdeleted = $this->model->delete($id);
+        return (!$bookdeleted) ? header("Location:index.php") : header("Location:../view/edicion-formulario.php");
     }
 }
 

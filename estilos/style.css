@@ -41,7 +41,13 @@
   a:link, a:visited, a:active {
     text-decoration:none;
   }
-
+  .x{
+    display: flex;
+    justify-content: flex-end;
+  }
+  .bi-x-square-fill{
+    color: var(--c-btn-delete-border);
+  }
   .box0 {
     display: flex;
     justify-content: center;

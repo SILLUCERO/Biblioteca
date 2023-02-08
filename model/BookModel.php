@@ -3,7 +3,7 @@
 class BookModel
 {
     public $conn;
-    public $table ="libros";
+    public $table = "libros";
     public function __construct()
     {
         require_once("/Applications/MAMP/htdocs/Biblioteca2/config/Database.php");
@@ -25,14 +25,29 @@ class BookModel
         $query = mysqli_query($this->conn, $sql);
         return $query;
     }
-    public function updateBooks($id,$isbn, $titulo, $autor, $descripcion, $portada)
+
+    public function getById($id)
     {
-        
+        $sql = "SELECT * FROM libros WHERE id='$id'";
+        $query = mysqli_query($this->conn, $sql);
+        return mysqli_fetch_array($query);
+    }
+
+    public function updateBook($id, $isbn, $titulo, $autor, $descripcion, $portada)
+    {
+
         $sql = "UPDATE libros
         SET ISBN='$isbn', titulo='$titulo', autor='$autor', descripcion='$descripcion', portada='$portada'
         WHERE id='$id'";
-       $query=mysqli_query($this->conn,$sql);
+        $query = mysqli_query($this->conn, $sql);
 
         return $query;
     }
-}   
+
+    public function delete($id)
+    {
+        $sql = "DELETE FROM libros  WHERE id='$id'";
+        $query = mysqli_query($this->conn, $sql);
+        return mysqli_fetch_array($query);
+    }
+}
