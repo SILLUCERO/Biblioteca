@@ -14,7 +14,7 @@
 <body>
     <div class="box0">
         <header class="header">
-            <a href="./indice.php" class="logo">
+            <a href="./index.php" class="logo">
                 <img src="./assets/img_logo.png" alt="Isologo de Smart Books">
                 <h1>Smart Books</h1>
             </a>
@@ -31,7 +31,8 @@
             </div>
         </header>
         <h2 class="tipoForm">Crear Registro</h2>
-        <form class="formLibros" action="./logica/crear.php" method="POST">
+ 
+        <form class="formLibros" action="./store.php" method="POST">
             <label for="isbn">ISBN:
                 <input id="isbn" class="boxDatos" type="text" name="isbn" placeholder="987-XXXXXXXXX">
             </label>
