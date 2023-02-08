@@ -31,7 +31,8 @@
             </div>
         </header>
         <h2 class="tipoForm">Crear Registro</h2>
-        <form class="formLibros" action="./logica/crear.php" method="POST">
+        action="index.php?controller=note&action=delete"
+        <form class="formLibros" action="index.php?controller=BookModel&action=createBook" method="POST"> 
             <label for="isbn">ISBN:
                 <input id="isbn" class="boxDatos" type="text" name="isbn" placeholder="987-XXXXXXXXX">
             </label>
