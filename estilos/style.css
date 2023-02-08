@@ -44,9 +44,11 @@
   .x{
     display: flex;
     justify-content: flex-end;
+    
   }
   .bi-x-square-fill{
     color: var(--c-btn-delete-border);
+    font-size: 1.7rem;
   }
   .box0 {
     display: flex;
