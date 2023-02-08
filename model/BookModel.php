@@ -7,10 +7,8 @@ class BookModel
     public function __construct()
     {
         //require_once("/Applications/MAMP/htdocs/Biblioteca2/config/Database.php");
-        require_once("/xampp/htdocs/Biblioteca2/config/Database.php");    
-            $this->BookModel = array();
-            $this->db=new PDO('mysql:host=localhost;dbname=biblioteca',"root","");
-
+        require_once("./config/Database.php");    
+            
     }
 
     public function getBooks()
