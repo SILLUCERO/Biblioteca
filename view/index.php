@@ -3,7 +3,7 @@ require_once("/Applications/MAMP/htdocs/Biblioteca2/controller/BookController.ph
 //require_once("/xampp/htdocs/Biblioteca2/controller/BookController.php");
 
 $controller = new BookController();
-$result = $controller->getBooks();
+$result = $controller->getbooks();
 ?>
 <!DOCTYPE html>
 <html lang="en">
