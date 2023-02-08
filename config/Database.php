@@ -5,7 +5,6 @@
     // define('DB_PASSWORD', 'root');
     define('DB_NAME', 'biblioteca');
 class Database{
-
     public function connection()
     {
         try{
