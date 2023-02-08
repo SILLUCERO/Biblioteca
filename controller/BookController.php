@@ -16,7 +16,14 @@ class BookController
         return ($this->model->getBooks() ? $this->model->getBooks() : "there is no Books");
 
     }
+    public function createBooks()
+    {
+        return ($this->model->createBooks() ? $this->model->createBooks() : "no se ha creado libro");
+
+    }
 }
+
+ 
 
 
 ?>
