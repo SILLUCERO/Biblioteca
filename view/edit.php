@@ -7,5 +7,5 @@
     $descripcion = $_POST['descripcion'];
     $portada = $_POST['portada'];
 
-    $librocreado =$obj->updateBook($isbn, $titulo, $autor, $descripcion, $portada);
+    $librocreado =$obj->updateBooks($id, $isbn, $titulo, $autor, $descripcion, $portada);
 ?>
