@@ -6,8 +6,8 @@ class BookController
 
     public function __construct()
     {
-         require_once("/Applications/MAMP/htdocs/Biblioteca2/model/BookModel.php");
-        //require_once("/xampp/htdocs/Biblioteca2/model/BookModel.php");
+        //require_once("/Applications/MAMP/htdocs/Biblioteca2/model/BookModel.php");
+        require_once("/xampp/htdocs/Biblioteca2/model/BookModel.php");
         $this->model = new BookModel();
     }
     

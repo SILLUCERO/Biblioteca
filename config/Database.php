@@ -5,7 +5,7 @@ class Database{
     private $servername = "localhost";
     private $username = "root";
     // private $password = "root";
-    private $password = "root";
+    private $password = "";
     private $db="biblioteca";
 
     public function connection()
