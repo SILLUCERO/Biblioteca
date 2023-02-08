@@ -27,7 +27,7 @@ $result = $controller->getBooks();
 
             <div class=acciones_barra>
                 <a href="./indice.php">Biblioteca</a>
-                <a href="./formulario.php">Crear Libro</a>
+                <a href="../formulario.php">Crear Libro</a>
                 <form action="indice.php" method="POST" class="input-wrapper">
                     <label for="buscar">
                         <input type="text" class="input" name="buscar" placeholder="Buscar...">
