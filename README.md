@@ -6,10 +6,10 @@ We present the second version of the Biblioteca FemCoders Project. The main obje
 ## :open_book:Project description   
 ​        
 CRUD operations allow us to access "Biblioteca" database and get the information of a main table called "Libros".
-1. Create action allow us to create a new book.
-2. Read action is performed to display all the books from the database.
-3. Update action allow us to edit the information of a book.
-4. Delete action allow us to delete a specific book from the table.
+1. **Create** action allow us to create a new book.
+2. **Read** action is performed to display all the books from the database.
+3. **Update** action allow us to edit the information of a book.
+4. **Delete** action allow us to delete a specific book from the table.
  
    ​
 ## :iphone:Mobile Graphic reference
