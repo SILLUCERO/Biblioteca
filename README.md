@@ -60,15 +60,12 @@ The design is responsive, the app will addapt to desktop or mobile.
 ​
 ​
 ## :raising_hand_woman:Authors
-​
 - [Zindy](https://github.com/LittleZ17)
 - [Silvina](https://github.com/SILLUCERO)
 - [Juliana](https://github.com/)
 - [Gabriela](https://github.com/gabrielabarajas)
    ​​
 ## Acknowledgements
-​
  - [Readme template](https://readme.so/)
  - [insert data with MySQL and PHP](https://www.youtube.com/watch?v=uMlqYmvfkqo)
  - [Create a CRUD in PHP and MySQL](https://www.youtube.com/watch?v=MaJJ_n1E1yo)
-  
