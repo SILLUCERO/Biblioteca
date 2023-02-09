@@ -37,7 +37,7 @@
             <button onclick="alerta('Se ha creado con exito!')" class='btnCrear' type="submit">Crear</button>
         </form>
     </div>
-    <script src="./alertas.js"></script>
+    <script src="../alertas.js"></script>
 </body>
 
 </html>

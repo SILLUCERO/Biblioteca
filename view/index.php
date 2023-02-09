@@ -1,10 +1,16 @@
 <?php
 require_once("/Applications/MAMP/htdocs/Biblioteca2/controller/BookController.php");
 
+$input = $_GET['buscar'];
 
 $controller = new BookController();
-$id = $_GET["id"];
-$result = $controller->getbooks();
+
+if($input){
+    echo $input;
+    $result = $controller->search($input);
+}else{
+    $result = $controller->getbooks();
+}
 
 ?>
 <!DOCTYPE html>
@@ -20,9 +26,9 @@ $result = $controller->getbooks();
 
 <body>
     <div class="box0">
-    <?php
-    require_once("/Applications/MAMP/htdocs/Biblioteca2/view/header.php");
-?>
+        <?php
+                require_once("/Applications/MAMP/htdocs/Biblioteca2/view/header.php");
+                ?>
         <main class="tablero">
 
             <?php if ($result) : ?>
@@ -41,7 +47,7 @@ $result = $controller->getbooks();
                             <div class="btnsIcons">
                                 <a class="eye" href="detail.php?id=<?= $book['id'] ?>"><i class="bi bi-eye-fill"></i></a>
                                 <a class="pencil" href="formEdit.php?id=<?= $book['id'] ?>"><i class="bi bi-pencil-fill"></i></a>
-                                <a onclick="alerta('Se ha eliminado con exito!')" class="trash" href="delete.php?id=<?= $book['id']?>" class="trash"><i class="bi bi-trash3-fill"></i></a>
+                                <a onclick="alerta('Se ha eliminado con exito!')" class="trash" href="delete.php?id=<?= $book['id'] ?>" class="trash"><i class="bi bi-trash3-fill"></i></a>
                             </div>
                         </div>
                     </div>
@@ -51,7 +57,7 @@ $result = $controller->getbooks();
             <?php endif; ?>
         </main>
     </div>
-    <script src="./alertas.js"></script>
+    <script src="../alertas.js"></script>
 </body>
 
 </html>

@@ -50,7 +50,7 @@ $result = $controller->getById($id);
             <button onclick="alerta('Los datos han sido modificados')" class="btnConfirmar" type="submit">Confirmar</button>
         </form>
     </div>
-    <script src="./alertas.js"></script>
+    <script src="../alertas.js"></script>
 </body>
 
 </html>

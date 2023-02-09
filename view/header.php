@@ -7,7 +7,7 @@
     <div class=acciones_barra>
         <a href="./index.php">Biblioteca</a>
         <a href="./formCreate.php">Crear Libro</a>
-        <form action="index.php" method="POST" class="input-wrapper">
+        <form action="index.php" method="GET" class="input-wrapper">
             <label for="buscar">
                 <input type="text" class="input" name="buscar" placeholder="Buscar...">
                 <button class="bi-search"></button>
