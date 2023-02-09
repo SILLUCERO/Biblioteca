@@ -10,7 +10,8 @@ CRUD operations allow us to access "Biblioteca" database and get the information
 2. **Read** action is performed to display all the books from the database.
 3. **Update** action allow us to edit the information of a book.
 4. **Delete** action allow us to delete a specific book from the table.
- 
+
+The design is responsive, the app will addapt to desktop or mobile.
    ​
 ## :iphone:Mobile Graphic reference
 ​
@@ -21,10 +22,10 @@ CRUD operations allow us to access "Biblioteca" database and get the information
 
 ## :desktop_computer:Desktop Graphic reference
 ​
-![Image text](./assets/img%20readme/Captura%201.PNG)
-![Image text](./assets/img%20readme/Captura%202.PNG)
-![Image text](./assets/img%20readme/Captura%203.PNG)
-![Image text](./assets/img%20readme/Captura%204.PNG)
+![Image text](./assets/img/img_redme/Captura%201.PNG)
+![Image text](./assets/img/img_redme/Captura%202.PNG)
+![Image text](./assets/img/img_redme/Captura%203.PNG)
+!![Image text](./assets/img/img_redme/Captura%204.PNG)
 
 ## :hammer_and_wrench:Tools 
 - Figma
