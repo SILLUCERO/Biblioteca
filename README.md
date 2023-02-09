@@ -41,22 +41,18 @@ The design is responsive, the app will addapt to desktop or mobile.
 - MySQL
      
 ## :flashlight:Features
-* [x] - Layout an application
-* [x] - Develop a dynamic and adaptive web user interface
-* [x] - Develop the backend part with PHP
-* [x] - Create a MySQL database
-
-​
+* **SQL** database using a mian table.
+* **PHP** as a backend language.
+* **HTML and CSS** as front end tools.
+* **Bootstrap** as main library for styles.
 ​
 ## :page_facing_up:Documentation
 ​
 [Documentation](https://factoriaf5.notion.site/Biblioteca-ace270257b804f508b3e9a93a0cc6693)
 ​
-​
 ## :sparkle:Demo
 ​
 [Demo](https://littlez17.github.io/BoomGirlsProject/)
-
 
 ## :infinity:Prototype
 
@@ -65,13 +61,11 @@ The design is responsive, the app will addapt to desktop or mobile.
 ​
 ## :raising_hand_woman:Authors
 ​
-- [@LittleZ17](https://github.com/LittleZ17)
-- [@LuisaVAZ](https://github.com/LuisaVAZ)
-- [@Iris Leo](https://github.com/mauisiri)   
-- [@KaroVillarraga](https://github.com/KaroVillarraga) 
-- [@nataliavorobyeva](https://github.com/NataliaVorobyeva)  
-     
-     ​​
+- [Zindy](https://github.com/LittleZ17)
+- [Silvina](https://github.com/SILLUCERO)
+- [Juliana](https://github.com/)
+- [Gabriela](https://github.com/gabrielabarajas)
+   ​​
 ## Acknowledgements
 ​
  - [Readme template](https://readme.so/)
