@@ -6,7 +6,6 @@ $input = $_GET['buscar'];
 $controller = new BookController();
 
 if($input){
-    echo $input;
     $result = $controller->search($input);
 }else{
     $result = $controller->getbooks();
