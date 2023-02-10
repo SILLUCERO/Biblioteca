@@ -49,7 +49,7 @@ $book = $controller->getById($id);
             </div>
         </div>
     </div>
-    <script src="./alertas.js"></script>
+    <script src="../alertas.js"></script>
 </body>
 
 </html>
