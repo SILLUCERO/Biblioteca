@@ -1,5 +1,6 @@
 <?php
-require_once("/Applications/MAMP/htdocs/Biblioteca2/controller/BookController.php");
+//require_once("/Applications/MAMP/htdocs/Biblioteca2/controller/BookController.php");
+require_once("/xampp/htdocs/Biblioteca2/controller/BookController.php");
 
 $controller = new BookController();
 $id = $_GET["id"];
@@ -20,7 +21,8 @@ $book = $controller->getById($id);
 <body>
     <div class="box0">
         <?php
-        require_once("/Applications/MAMP/htdocs/Biblioteca2/view/header.php");
+        //require_once("/Applications/MAMP/htdocs/Biblioteca2/view/header.php");
+        require_once("/xampp/htdocs/Biblioteca2/view/header.php");
         ?>
 
         <div class="ventana">

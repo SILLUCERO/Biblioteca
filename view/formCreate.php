@@ -12,7 +12,8 @@
 <body>
     <div class="box0">
         <?php
-        require_once("/Applications/MAMP/htdocs/Biblioteca2/view/header.php");
+        //require_once("/Applications/MAMP/htdocs/Biblioteca2/view/header.php");
+        require_once("/xampp/htdocs/Biblioteca2/view/header.php");
         ?>
         <h2 class="tipoForm">Crear Registro</h2>
 

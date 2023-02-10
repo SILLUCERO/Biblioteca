@@ -1,5 +1,6 @@
 <?php
-require_once("/Applications/MAMP/htdocs/Biblioteca2/controller/BookController.php");
+//require_once("/Applications/MAMP/htdocs/Biblioteca2/controller/BookController.php");
+require_once("/xampp/htdocs/Biblioteca2/controller/BookController.php");
 
 
 $controller = new BookController();
@@ -21,7 +22,8 @@ $result = $controller->getById($id);
 <body>
     <div class='box0'>
         <?php
-        require_once("/Applications/MAMP/htdocs/Biblioteca2/view/header.php");
+        //require_once("/Applications/MAMP/htdocs/Biblioteca2/view/header.php");
+        require_once("/xampp/htdocs/Biblioteca2/view/header.php");
         ?>
         <h2 class="tipoForm">Editar Datos</h2>
 

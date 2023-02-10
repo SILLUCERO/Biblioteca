@@ -6,7 +6,8 @@ class BookController
 
     public function __construct()
     {
-        require_once("/Applications/MAMP/htdocs/Biblioteca2/model/BookModel.php");
+        //require_once("/Applications/MAMP/htdocs/Biblioteca2/model/BookModel.php");
+        require_once("/xampp/htdocs/Biblioteca2/model/BookModel.php");
         $this->model = new BookModel();
     }
     public function getbooks()
@@ -39,7 +40,7 @@ class BookController
 
     public function delete($id){
         $bookdeleted = $this->model->delete($id);
-        return (!$bookdeleted) ? header("Location:index.php") : false;
+        return ($bookdeleted) ? header("Location:index.php") : false;
     }
 }
 

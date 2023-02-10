@@ -1,12 +1,11 @@
 <?php
-require_once("/Applications/MAMP/htdocs/Biblioteca2/controller/BookController.php");
-
-$input = $_GET['buscar'];
+//require_once("/Applications/MAMP/htdocs/Biblioteca2/controller/BookController.php");
+require_once("/xampp/htdocs/Biblioteca2/controller/BookController.php"); 
 
 $controller = new BookController();
 
-if($input){
-    $result = $controller->search($input);
+if(isset($_GET['buscar'])){
+    $result = $controller->search($_GET['buscar']);
 }else{
     $result = $controller->getbooks();
 }
@@ -26,7 +25,8 @@ if($input){
 <body>
     <div class="box0">
         <?php
-                require_once("/Applications/MAMP/htdocs/Biblioteca2/view/header.php");
+                //require_once("/Applications/MAMP/htdocs/Biblioteca2/view/header.php");
+                require_once("/xampp/htdocs/Biblioteca2/view/header.php");
                 ?>
         <main class="tablero">
 

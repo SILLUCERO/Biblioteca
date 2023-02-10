@@ -6,7 +6,8 @@ class BookModel
     
     public function __construct()
     {
-        require_once("/Applications/MAMP/htdocs/Biblioteca2/config/Database.php");
+        //require_once("/Applications/MAMP/htdocs/Biblioteca2/config/Database.php");
+        require_once("/xampp/htdocs/Biblioteca2/config/Database.php");
         $db = new Database();
         $this->conn = $db->connection();
     }
@@ -57,6 +58,7 @@ class BookModel
     {
         $sql = "DELETE FROM libros  WHERE id='$id'";
         $query = mysqli_query($this->conn, $sql);
-        return mysqli_fetch_array($query);
+        //return mysqli_fetch_array($query);
+        return $query;
     }
 }
