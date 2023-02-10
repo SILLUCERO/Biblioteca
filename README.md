@@ -56,7 +56,7 @@ The design is responsive, the app will addapt to desktop or mobile.
 
 ## :computer: Mock-Up
 
-https://www.figma.com/file/6CzpgixPJtD9cNJ0jqKWs3/Biblioteca?node-id=0%3A1&t=024Ue2pJUxu4vbjL-0
+[Figma] https://www.figma.com/file/6CzpgixPJtD9cNJ0jqKWs3/Biblioteca?node-id=0%3A1&t=024Ue2pJUxu4vbjL-0
 ## :infinity:Prototype
 
 :iphone: [Prototype Mobile](https://www.figma.com/proto/6CzpgixPJtD9cNJ0jqKWs3/Biblioteca?page-id=7%3A3&node-id=15%3A387&viewport=520%2C965%2C1&scaling=scale-down&starting-point-node-id=15%3A387)
