@@ -52,11 +52,16 @@ The design is responsive, the app will addapt to desktop or mobile.
 ​
 ## :sparkle:Demo
 ​
-[Demo](https://littlez17.github.io/BoomGirlsProject/)
+[Demo](https://github.com/SILLUCERO/Biblioteca2)
 
+## :computer: Mock-Up
+
+https://www.figma.com/file/6CzpgixPJtD9cNJ0jqKWs3/Biblioteca?node-id=0%3A1&t=024Ue2pJUxu4vbjL-0
 ## :infinity:Prototype
 
-[Prototype](https://www.figma.com/proto/O1sNjTD6bATNnihPXwB7XY/BoomGirls?node-id=126%3A22&scaling=scale-down&page-id=1%3A5&starting-point-node-id=126%3A22)
+:iphone: [Prototype Mobile](https://www.figma.com/proto/6CzpgixPJtD9cNJ0jqKWs3/Biblioteca?page-id=7%3A3&node-id=15%3A387&viewport=520%2C965%2C1&scaling=scale-down&starting-point-node-id=15%3A387)
+
+:computer: [Prototype Desk](https://www.figma.com/proto/6CzpgixPJtD9cNJ0jqKWs3/Biblioteca?page-id=0%3A1&node-id=5%3A118&viewport=876%2C434%2C0.25&scaling=min-zoom&starting-point-node-id=5%3A118)
 ​
 ​
 ## :raising_hand_woman:Authors
