@@ -28,5 +28,14 @@ class BookModel
         VALUES (NULL, '$isbn', '$titulo', '$autor', '$descripcion', '$portada')");
         return $query->fetch_all(MYSQLI_ASSOC);
     }
-}
+    public function updateBooks($id,$isbn, $titulo, $autor, $descripcion, $portada)
+    {
+        
+        $sql = "UPDATE libros
+        SET ISBN='$isbn', titulo='$titulo', autor='$autor', descripcion='$descripcion', portada='$portada'
+        WHERE id='$id'";
+       $query=mysqli_query($this->conn,$sql);
 
+        return $query;
+    }
+}   

@@ -21,9 +21,13 @@ class BookController
         return ($this->model->createBooks() ? $this->model->createBooks() : "no se ha creado libro");
 
     }
-}
+    public function updateBooks($id,$isbn, $titulo, $autor, $descripcion, $portada)
+    {
+        $updateBook = $this->model->updateBooks($id, $isbn, $titulo, $autor, $descripcion, $portada);
+        return ($updateBook) ? header("Location:index.php") : header("Location:../view/edicion-formulario.php");
 
- 
+    }
+}
 
 
 ?>
